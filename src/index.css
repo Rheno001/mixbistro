@@ -1,5 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+@font-face {
+  font-family: "B691-Sans";
+  src: url("./assets/fonts/B691-Sans Regular.ttf") format("opentype");
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.sans {
+  font-family: "B691-Sans";
+}
+
+.sliding-text-box {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.sliding-text {
+  display: flex;
+  animation: slide 2s linear infinite; /* Adjust timing for smoothness */
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0); /* Start from the initial position */
+  }
+  100% {
+    transform: translateX(-50%); /* Slide halfway, covering the original set */
+  }
+}
