@@ -1,4 +1,3 @@
-import React from 'react'
 import { motion } from 'framer-motion'
 import logo from '../../assets/logo.png'
 import vector from '../../assets/vector.png'
@@ -35,12 +34,12 @@ const Menu = () => {
               <p className='text-accent font-[600] text-[18px] leading-[27px]'>$20,00</p>
             </span>
             <span className='gap-[11px] py-4 flex flex-col border-b-2 border-dashed border-orange'>
-              <h2 className='text-accent text-[40px] leading-[48px] font-[600]'>Chillin' Chicken Suya</h2>
+              <h2 className='text-accent text-[40px] leading-[48px] font-[600]'>Chillin&apos; Chicken Suya</h2>
               <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>Mild / Spicy Grilled chicken garnished with onion & cucumber.</h3>
               <p className='text-accent font-[600] text-[18px] leading-[27px]'>$30,00</p>
             </span>
             <span className='gap-[11px] py-4 flex flex-col border-b-2 border-dashed border-orange'>
-              <h2 className='text-accent text-[40px] leading-[48px] font-[600]'>Wingin' it Suya</h2>
+              <h2 className='text-accent text-[40px] leading-[48px] font-[600]'>Wingin&apos; it Suya</h2>
               <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>Mild / Spicy Grilled chicken wings garnished with onion & cucumber.</h3>
               <p className='text-accent font-[600] text-[18px] leading-[27px]'>$17,00</p>
             </span>
@@ -63,12 +62,12 @@ const Menu = () => {
               <p className='text-accent font-[600] text-[18px] leading-[27px]'>$20,00</p>
             </span>
             <span className='gap-[11px] py-4 flex flex-col border-b-2 border-dashed border-orange'>
-              <h2 className='text-accent text-[40px] leading-[48px] font-[600]'>Chillin' Chicken Suya</h2>
+              <h2 className='text-accent text-[40px] leading-[48px] font-[600]'>Chillin&apos; Chicken Suya</h2>
               <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>Mild / Spicy Grilled chicken garnished with onion & cucumber.</h3>
               <p className='text-accent font-[600] text-[18px] leading-[27px]'>$30,00</p>
             </span>
             <span className='gap-[11px] py-4 flex flex-col border-b-2 border-dashed border-orange'>
-              <h2 className='text-accent text-[40px] leading-[48px] font-[600]'>Wingin' it Suya</h2>
+              <h2 className='text-accent text-[40px] leading-[48px] font-[600]'>Wingin&apos; it Suya</h2>
               <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>Mild / Spicy Grilled chicken wings garnished with onion & cucumber.</h3>
               <p className='text-accent font-[600] text-[18px] leading-[27px]'>$17,00</p>
             </span>
@@ -91,12 +90,12 @@ const Menu = () => {
               <p className='text-accent font-[600] text-[18px] leading-[27px]'>$20,00</p>
             </span>
             <span className='gap-[11px] py-4 flex flex-col border-b-2 border-dashed border-orange'>
-              <h2 className='text-accent text-[40px] leading-[48px] font-[600]'>Chillin' Chicken Suya</h2>
+              <h2 className='text-accent text-[40px] leading-[48px] font-[600]'>Chillin&apos; Chicken Suya</h2>
               <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>Mild / Spicy Grilled chicken garnished with onion & cucumber.</h3>
               <p className='text-accent font-[600] text-[18px] leading-[27px]'>$30,00</p>
             </span>
             <span className='gap-[11px] py-4 flex flex-col border-b-2 border-dashed border-orange'>
-              <h2 className='text-accent text-[40px] leading-[48px] font-[600]'>Wingin' it Suya</h2>
+              <h2 className='text-accent text-[40px] leading-[48px] font-[600]'>Wingin&apos; it Suya</h2>
               <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>Mild / Spicy Grilled chicken wings garnished with onion & cucumber.</h3>
               <p className='text-accent font-[600] text-[18px] leading-[27px]'>$17,00</p>
             </span>
@@ -119,12 +118,12 @@ const Menu = () => {
               <p className='text-accent font-[600] text-[18px] leading-[27px]'>$20,00</p>
             </span>
             <span className='gap-[11px] py-4 flex flex-col border-b-2 border-dashed border-orange'>
-              <h2 className='text-accent text-[40px] leading-[48px] font-[600]'>Chillin' Chicken Suya</h2>
+              <h2 className='text-accent text-[40px] leading-[48px] font-[600]'>Chillin&apos; Chicken Suya</h2>
               <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>Mild / Spicy Grilled chicken garnished with onion & cucumber.</h3>
               <p className='text-accent font-[600] text-[18px] leading-[27px]'>$30,00</p>
             </span>
             <span className='gap-[11px] py-4 flex flex-col border-b-2 border-dashed border-orange'>
-              <h2 className='text-accent text-[40px] leading-[48px] font-[600]'>Wingin' it Suya</h2>
+              <h2 className='text-accent text-[40px] leading-[48px] font-[600]'>Wingin&apos; it Suya</h2>
               <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>Mild / Spicy Grilled chicken wings garnished with onion & cucumber.</h3>
               <p className='text-accent font-[600] text-[18px] leading-[27px]'>$17,00</p>
             </span>
