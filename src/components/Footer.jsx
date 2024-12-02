@@ -11,7 +11,7 @@ const Footer = () => {
         <div className=' pt-[76px] flex flex-col items-center gap-[24px]'>
             <div className='flex justify-center items-center gap-[50px] text-[25px] font-[600]'>
                 <Link to={'/menu'}>Menu</Link>
-                <Link to={'/'}>Our Story</Link>
+                <Link to={'/.'}>Our Story</Link>
                 <Link to={'/catering'}>Catering</Link>
             </div>
 

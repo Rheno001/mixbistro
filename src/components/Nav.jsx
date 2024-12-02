@@ -10,7 +10,7 @@ const Nav = () => {
             <Link className='w-[33%] flex justify-center items-center' to={'/'}><img src={logo} alt="" /></Link>
 
             <div className='flex w-[33%] items-center justify-end gap-[50px]'>
-                <Link to={'/story'}>Our Story</Link>
+                <Link to={'/.'}>Our Story</Link>
                 <Link to={'/catering'}>Catering</Link>
             </div>
         </div>
