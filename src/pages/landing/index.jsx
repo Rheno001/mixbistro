@@ -259,7 +259,7 @@ const Landing = () => {
                             nextEl: ".custom-next",
                             prevEl: ".custom-prev",
                         }}
-                        className='flex justify-center items-center w-[80%]'
+                        className='flex justify-center items-center w-[100%]'
                     >
                         <SwiperSlide>
                             <OrderCard />
