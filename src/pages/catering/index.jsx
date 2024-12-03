@@ -110,16 +110,16 @@ const Catering = () => {
 
 
 
-                <div className='flex items-center px-[80px] py-[50px] w-[72%] m-auto relative z-[500]'>
-                    <span className='text-center mx-[20px]'>
-                        <h2 className='text-accent text-[40px] leading-[48px] font-[600]'>Full Pan Party</h2>
-                        <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>Mild / Spicy Grilled beef garnished with onion & cucumber.</h3>
-                        <p className='text-accent font-[600] text-[18px] leading-[27px]'>$170,00</p>
+                <div className='flex items-center px-[40px] sm:px-[80px] py-[50px] sm:w-[72%] mx-auto relative z-[500]'>
+                    <span className='text-center sm:mx-[20px]'>
+                        <h2 className='text-accent sm:text-[40px] sm:leading-[48px] font-[600]'>Full Pan Party</h2>
+                        <h3 className='text-white font-[500] text-[15px] sm:text-[20px] sm:leading-[37.5px]'>Mild / Spicy Grilled beef garnished with onion & cucumber.</h3>
+                        <p className='text-accent font-[600] text-[18px] sm:leading-[27px]'>$170,00</p>
                     </span>
-                    <span className='text-center mx-[20px]'>
-                        <h2 className='text-accent text-[40px] leading-[48px] font-[600]'>Small Pan Snack</h2>
-                        <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>Mild / Spicy Grilled chicken garnished with onion & cucumber.</h3>
-                        <p className='text-accent font-[600] text-[18px] leading-[27px]'>$300,00</p>
+                    <span className='text-center sm:mx-[20px]'>
+                        <h2 className='text-accent sm:text-[40px] sm:leading-[48px] font-[600]'>Small Pan Snack</h2>
+                        <h3 className='text-white font-[500] text-[15px] sm:text-[20px] sm:leading-[37.5px]'>Mild / Spicy Grilled chicken garnished with onion & cucumber.</h3>
+                        <p className='text-accent font-[600] text-[18px] sm:leading-[27px]'>$300,00</p>
                     </span>
                 </div>
             </section>
