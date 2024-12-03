@@ -290,7 +290,7 @@ const Menu = () => {
             }}
            >
             <span className='gap-[11px] pb-4 flex flex-col border-b-2 border-dashed border-orange'>
-              <h2 className='text-accent text-[40px] leading-[48px] font-[600]'>BOSS! Beef Suya</h2>
+              <h2 className='text-accent text-[40px] leading-[48px] font-[600]'>Zobo Party Gallon</h2>
               <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>Mild / Spicy Grilled beef garnished with onion & cucumber.</h3>
               <p className='text-accent font-[600] text-[18px] leading-[27px]'>$20,00</p>
             </span>

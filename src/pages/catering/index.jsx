@@ -18,10 +18,11 @@ const Catering = () => {
                     duration: 2.5
                 }}
             />
+            
             <section>
                 <div className='flex flex-col items-center justify-center mt-20'>
-                   <p className='text-accent text-xl font-[600] text-[70px] leading-[84px] font-mont align-middle'>Our Catering Services</p>
-                   <img src={vector} alt="Decorative Vector" className="vector-image w-[250px]" />
+                   <p className='text-accent font-[600] text-[70px] leading-[84px] font-mont align-middle'>Our Catering Services</p>
+                   <img src={vector} alt="Decorative Vector" className="vector-image w-[250px] mt-4" />
                </div>
                <div className='carousel'></div>
                <div className='flex items-center justify-evenly px-[80px]'>
