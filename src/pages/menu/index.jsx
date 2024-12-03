@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { useInView } from "react-intersection-observer";
 import logo from '../../assets/logo.png'
-import vector from '../../assets/vector.png'
+import vector from '../../assets/Vector.png'
 import frame120 from '../../assets/Frame120.png'
 import burger from '../../assets/burger.png'
 import salad from '../../assets/two.png'
@@ -40,7 +40,7 @@ const Menu = () => {
     threshold: 0.5,
   });
   return (
-    <div className="menu-container bg-primary">
+    <div className="menu-container bg-primary overflow-hidden">
       <motion.img 
         src={logo} 
         alt="Restaurant Logo" 

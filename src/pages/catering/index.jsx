@@ -1,7 +1,7 @@
 import React from 'react'
 import{ motion } from 'framer-motion'
 import catering from '../../assets/catering.png'
-import vector from '../../assets/vector.png'
+import vector from '../../assets/Vector.png'
 import pic1 from '../../assets/pic1.png'
 import pic2 from '../../assets/pic2.png'
 import pic3 from '../../assets/pic3.png'
@@ -33,7 +33,7 @@ const Catering = () => {
  
     
     return (
-        <div className="menu-container bg-primary">
+        <div className="menu-container bg-primary overflow-hidden">
             <motion.img 
                 src={catering} 
                 alt="Catering Image" 
