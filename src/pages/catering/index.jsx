@@ -37,7 +37,7 @@ const Catering = () => {
             <motion.img
                 src={catering}
                 alt="Catering Image"
-                className="menu-logo px-[65px] pt-20"
+                className="menu-logo px-[65px] pt-8 sm:pt-20"
                 initial={{ y: -100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{
@@ -57,8 +57,8 @@ const Catering = () => {
                     }}
                     transition={{ duration: 0.5 }}
                     className='flex justify-center items-center px-[74px]'>
-                    <div className='relative flex flex-col items-center mt-[80px]'>
-                        <p className='text-accent font-[600] text-[70px] leading-[84px] font-mont text-center'>Our Catering Services</p>
+                    <div className='relative flex flex-col items-center mt-[40px] sm:mt-[80px]'>
+                        <p className='text-accent font-[600] text-[22px] sm:text-[70px] leading-[48px]md:leading-[84px] font-mont text-center'>Our Catering Services</p>
                         <img src={vector} alt="Decorative Vector" className="vector-image w-[250px] mt-4" />
                     </div>
                 </motion.div>
@@ -73,7 +73,7 @@ const Catering = () => {
                             opacity: inView11 ? 1 : 0,
                             y: inView11 ? 0 : 100,
                         }}
-                        transition={{ duration: 0.5 }} className='flex justify-center items-center mt-[80px] flex-col relative'>
+                        transition={{ duration: 0.5 }} className='flex justify-center items-center mt-[40px] sm:mt-[80px] flex-col relative'>
                         <img src={ellipse} alt="" className='absolute z-[400]  -top-[15%]' />
                         <img src={ellipse} alt="" className='absolute z-[400]  -bottom-[16%]' />
                         <Swiper
@@ -110,13 +110,13 @@ const Catering = () => {
 
 
 
-                <div className='flex items-center px-[80px] w-[72%] m-auto relative z-[500]'>
-                    <span className='text-center p-[50px] px-0'>
+                <div className='flex items-center px-[80px] py-[50px] w-[72%] m-auto relative z-[500]'>
+                    <span className='text-center mx-[20px]'>
                         <h2 className='text-accent text-[40px] leading-[48px] font-[600]'>Full Pan Party</h2>
                         <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>Mild / Spicy Grilled beef garnished with onion & cucumber.</h3>
                         <p className='text-accent font-[600] text-[18px] leading-[27px]'>$170,00</p>
                     </span>
-                    <span className='text-center p-[50px] px-0'>
+                    <span className='text-center mx-[20px]'>
                         <h2 className='text-accent text-[40px] leading-[48px] font-[600]'>Small Pan Snack</h2>
                         <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>Mild / Spicy Grilled chicken garnished with onion & cucumber.</h3>
                         <p className='text-accent font-[600] text-[18px] leading-[27px]'>$300,00</p>
