@@ -7,6 +7,9 @@ import rightNav from '../../assets/rightNav.png'
 import hero from '../../assets/hero.png'
 import string from '../../assets/string.png'
 import art from '../../assets/art.png'
+import elevateL from '../../assets/elL.png'
+import elevateR from '../../assets/elR.png'
+import elevate from '../../assets/elevate.png'
 import line from '../../assets/line.png'
 import gal from '../../assets/gal.png'
 import smallL from '../../assets/small-l.png'
@@ -15,6 +18,7 @@ import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import Slider from '../../components/Slider'
 import Card from '../../components/Card'
+import shipping from './../../assets/shipping.png'
 import card1 from './../../assets/card1.png'
 import card2 from './../../assets/card2.png'
 import card3 from './../../assets/card3.png'
@@ -95,6 +99,26 @@ const Landing = () => {
         threshold: 0.5,
     });
     const { ref: ref15, inView: inView15 } = useInView({
+        triggerOnce: false,
+        threshold: 0.5,
+    });
+    const { ref: ref16, inView: inView16 } = useInView({
+        triggerOnce: false,
+        threshold: 0.5,
+    });
+    const { ref: ref19, inView: inView19 } = useInView({
+        triggerOnce: false,
+        threshold: 0.5,
+    });
+    const { ref: ref17, inView: inView17 } = useInView({
+        triggerOnce: false,
+        threshold: 0.5,
+    });
+    const { ref: ref18, inView: inView18 } = useInView({
+        triggerOnce: false,
+        threshold: 0.5,
+    });
+    const { ref: ref20, inView: inView20 } = useInView({
         triggerOnce: false,
         threshold: 0.5,
     });
@@ -259,7 +283,7 @@ const Landing = () => {
                             nextEl: ".custom-next",
                             prevEl: ".custom-prev",
                         }}
-                        className='flex justify-center items-center w-[100%]'
+                        className='flex justify-center items-center w-[100%] min-[1824px]:w-[80%]'
                     >
                         <SwiperSlide>
                             <OrderCard />
@@ -288,7 +312,7 @@ const Landing = () => {
                     </div>
                 </motion.div>
             </div>
-           
+
             <div className='pt-[70px]'>
                 <motion.div ref={ref12}
                     initial={{ opacity: 0, y: -200 }}
@@ -307,33 +331,107 @@ const Landing = () => {
                         y: inView13 ? 0 : 100,
                     }}
                     transition={{ duration: 0.5 }} className='flex justify-center items-center mt-[80px] pb-[70px]'>
-                   <img src={food} alt="" className='w-[80%]' />
+                    <img src={food} alt="" className='w-[80%]' />
                 </motion.div>
             </div>
-
-
         </div>
-        <div className='flex justify-between items-center py-[70px] pl-[40px] bg-accent'>
-                <motion.img ref={ref14}
+
+        <div className='flex justify-between items-center py-[70px] px-[5%] bg-accent'>
+            <motion.img ref={ref14}
+                initial={{ opacity: 0, x: -200 }}
+                animate={{
+                    opacity: inView14 ? 1 : 0,
+                    x: inView14 ? 0 : -200,
+                }}
+                transition={{ duration: 0.5 }} src={babe} className='w-[30%]' alt="" />
+            <motion.div ref={ref15}
+                initial={{ opacity: 0, x: 200 }}
+                animate={{
+                    opacity: inView15 ? 1 : 0,
+                    x: inView15 ? 0 : 200,
+                }}
+                transition={{ duration: 0.5 }} className='flex flex-col items-center'>
+                <div className='flex flex-col items-center px-[20px]'>
+                    <h1 className='text-center text-[70px] font-[600] text-primary leading-[84px]'>Enjoy Our Special Suya <br /> Burger</h1>
+                    <img src={baki} alt="" className='w-[70%] mt-[10px]' />
+                </div>
+            </motion.div>
+        </div>
+
+        <div className='pt-[70px] px[5%]'>
+            <motion.div ref={ref16}
+                initial={{ opacity: 0, y: -200 }}
+                animate={{
+                    opacity: inView16 ? 1 : 0,
+                    y: inView16 ? 0 : -200,
+                }}
+                transition={{ duration: 0.5 }} className='flex flex-col items-center'>
+                <h1 className='text-center text-[70px] font-[600] text-accent leading-[84px] mb-[10px]'>Elevate Your Events with <br /> Our  Catering Services</h1>
+                <img src={line} alt="" />
+            </motion.div>
+            <motion.div className='flex justify-center flex-col items-center mt-[80px] pb-[70px] relative'>
+
+                <div className='relative flex justify-center items-center'>
+                    <motion.img ref={ref17}
+                        initial={{ opacity: 0, x: -150 }}
+                        animate={{
+                            opacity: inView17 ? 1 : 0,
+                            x: inView17 ? 0 : -150,
+                        }}
+                        transition={{ duration: 0.5 }} src={elevateL} alt="" className='absolute -left-[10%] w-[30%]' />
+                    <motion.img ref={ref17}
+                        initial={{ opacity: 0, x: 150 }}
+                        animate={{
+                            opacity: inView17 ? 1 : 0,
+                            x: inView17 ? 0 : 150,
+                        }}
+                        transition={{ duration: 0.5 }} src={elevateR} alt="" className='absolute -right-[10%] w-[30%]' />
+                    <img src={elevate} alt="" className='w-[70%]' />
+                </div>
+
+                <p className='text-center w-[50%] text-[25px] font-[500] leading-[37px] text-white pt-[50px]'>At Suya Mix Bistro, we specialize in catering that brings the rich flavors of West Africa to your gatherings. Whether it&apos;s a wedding, corporate event, or a family celebration, our team is ready to deliver an unforgettable culinary experience.</p>
+
+                <div className='flex justify-center items-center text-primary mt-[50px] mb-[30px]'>
+                    <button className='bg-accent rounded-[5px] px-[62px] py-[22px] text-[25px] font-[600]'>View More</button>
+                </div>
+            </motion.div>
+        </div>
+
+        <div className='px-[5%] py-[70px]'>
+            <motion.div ref={ref20}
+                initial={{ opacity: 0, y: -200 }}
+                animate={{
+                    opacity: inView20 ? 1 : 0,
+                    y: inView20 ? 0 : -200,
+                }}
+                transition={{ duration: 0.5 }} className='flex flex-col items-center'>
+                <h1 className='text-center text-[70px] font-[600] text-accent leading-[84px] mb-[10px] capitalize'>shipping nationwide in uS</h1>
+                <img src={line} alt="" />
+            </motion.div>
+            <div className='flex justify-between items-center gap-[50px] pt-[80px]'>
+                <motion.img ref={ref18}
                     initial={{ opacity: 0, x: -200 }}
                     animate={{
-                        opacity: inView14 ? 1 : 0,
-                        x: inView14 ? 0 : -200,
+                        opacity: inView18 ? 1 : 0,
+                        x: inView18 ? 0 : -200,
                     }}
-                    transition={{ duration: 0.5 }} src={babe} className='w-[30%]' alt="" />
-                <motion.div ref={ref15}
+                    transition={{ duration: 0.5 }} src={shipping} className='w-[65%]' alt="" />
+                <motion.div ref={ref19}
                     initial={{ opacity: 0, x: 200 }}
                     animate={{
-                        opacity: inView15 ? 1 : 0,
-                        x: inView15 ? 0 : 200,
+                        opacity: inView19 ? 1 : 0,
+                        x: inView19 ? 0 : 200,
                     }}
-                    transition={{ duration: 0.5 }} className='-ml-[50px] flex flex-col items-center'>
-                    <div className='flex flex-col items-center px-[20px]'>
-                        <h1 className='text-center text-[70px] font-[600] text-primary leading-[84px]'>Enjoy Our Special Suya Burger</h1>
-                        <img src={baki} alt="" className='w-[70%] mt-[10px]' />
+                    transition={{ duration: 0.5 }} className='flex w-[35%] flex-col items-start'>
+                    <h2 className='text-accent text-[40px] font-[600] leading-[48px] pt-[30px]'>Enjoy Suya Delivered Right to Your Door</h2>
+                    <p className='pt-[30px] text-[18px] font-[500] leading-[28px] text-white'>Experience the rich, smoky flavors of our suya, now available for shipping across the USA. No matter where you are, you can indulge in our authentic dishes and bring a taste of Nigeria to your home.</p>
+
+                    <div className='flex justify-center w-full items-center text-primary mt-[50px] mb-[30px]'>
+                        <button className='bg-accent rounded-[5px] px-[62px] py-[20px] text-[25px] font-[600]'>View More</button>
                     </div>
                 </motion.div>
             </div>
+        </div>
 
     </div>);
 }
