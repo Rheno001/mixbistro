@@ -1,6 +1,8 @@
 import logo from '../assets/logo.svg'
 import { Link } from 'react-router-dom';
 
+
+
 const Nav = () => {
     return (<>
         <div className="bg-secondary px-[80px] py-[30px] text-accent font-[600] text-[25px] w-full flex justify-between items-center">

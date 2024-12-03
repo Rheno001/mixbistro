@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import catering from '../../assets/catering.png'
-import vector from '../../assets/vector.png'
+import vector from '../../assets/Vector.png'
 import pic1 from '../../assets/pic1.png'
 import pic2 from '../../assets/pic2.png'
 import pic3 from '../../assets/pic3.png'
@@ -74,8 +74,8 @@ const Catering = () => {
                             y: inView11 ? 0 : 100,
                         }}
                         transition={{ duration: 0.5 }} className='flex justify-center items-center mt-[80px] flex-col relative'>
-                            <img src={ellipse} alt="" className='absolute z-[400]  -top-[15%]' />
-                            <img src={ellipse} alt="" className='absolute z-[400]  -bottom-[16%]' />
+                        <img src={ellipse} alt="" className='absolute z-[400]  -top-[15%]' />
+                        <img src={ellipse} alt="" className='absolute z-[400]  -bottom-[16%]' />
                         <Swiper
                             modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                             spaceBetween={20}
