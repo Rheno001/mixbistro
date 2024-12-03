@@ -36,7 +36,7 @@ const Menu = () => {
                 }}
                 transition={{ duration: 0.5 }}
                 className='flex justify-center items-center px-[74px]'>
-                <div className='relative flex flex-col items-center'>
+                <div className='relative flex flex-col items-start'>
                  <p className='text-accent text-xl font-[600] text-[50px] leading-[84px] font-mont align-middle'>Groovy Green Salad</p>
                  <img src={vector} alt="Decorative Vector" className="vector-image w-[250px]" />
                 </div>
