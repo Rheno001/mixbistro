@@ -40,7 +40,7 @@ const Menu = () => {
     threshold: 0.5,
   });
   return (
-    <div className="menu-container bg-primary">
+    <div className="menu-container bg-primary overflow-hidden">
       <motion.img 
         src={logo} 
         alt="Restaurant Logo" 

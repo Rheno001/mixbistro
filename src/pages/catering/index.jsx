@@ -33,7 +33,7 @@ const Catering = () => {
  
     
     return (
-        <div className="menu-container bg-primary">
+        <div className="menu-container bg-primary overflow-hidden">
             <motion.img 
                 src={catering} 
                 alt="Catering Image" 
