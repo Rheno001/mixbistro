@@ -19,6 +19,8 @@ import card1 from './../../assets/card1.png'
 import card2 from './../../assets/card2.png'
 import card3 from './../../assets/card3.png'
 import food from './../../assets/food.png'
+import baki from './../../assets/blackvector.png'
+import babe from './../../assets/Frame 255.png'
 import about from './../../assets/about.png'
 import OrderCard from '../../components/OrderCard'
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -85,6 +87,14 @@ const Landing = () => {
         threshold: 0.5,
     });
     const { ref: ref13, inView: inView13 } = useInView({
+        triggerOnce: false,
+        threshold: 0.5,
+    });
+    const { ref: ref14, inView: inView14 } = useInView({
+        triggerOnce: false,
+        threshold: 0.5,
+    });
+    const { ref: ref15, inView: inView15 } = useInView({
         triggerOnce: false,
         threshold: 0.5,
     });
@@ -300,7 +310,30 @@ const Landing = () => {
                    <img src={food} alt="" className='w-[80%]' />
                 </motion.div>
             </div>
+
+
         </div>
+        <div className='flex justify-between items-center py-[70px] pl-[40px] bg-accent'>
+                <motion.img ref={ref14}
+                    initial={{ opacity: 0, x: -200 }}
+                    animate={{
+                        opacity: inView14 ? 1 : 0,
+                        x: inView14 ? 0 : -200,
+                    }}
+                    transition={{ duration: 0.5 }} src={babe} className='w-[30%]' alt="" />
+                <motion.div ref={ref15}
+                    initial={{ opacity: 0, x: 200 }}
+                    animate={{
+                        opacity: inView15 ? 1 : 0,
+                        x: inView15 ? 0 : 200,
+                    }}
+                    transition={{ duration: 0.5 }} className='-ml-[50px] flex flex-col items-center'>
+                    <div className='flex flex-col items-center px-[20px]'>
+                        <h1 className='text-center text-[70px] font-[600] text-primary leading-[84px]'>Enjoy Our Special Suya Burger</h1>
+                        <img src={baki} alt="" className='w-[70%] mt-[10px]' />
+                    </div>
+                </motion.div>
+            </div>
 
     </div>);
 }
