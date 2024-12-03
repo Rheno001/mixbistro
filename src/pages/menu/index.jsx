@@ -64,15 +64,15 @@ const Menu = () => {
                 transition={{ duration: 0.5 }}
                 className='flex justify-center items-center px-[74px]'>
                 <div className='relative flex flex-col items-center'>
-                 <p className='text-accent font-[600] text-[70px] leading-[84px] font-mont text-center'>Suya</p>
+                 <p className='text-accent font-[600] text-[30px] sm:text-[70px] leading-[84px] font-mont text-center'>Suya</p>
                  <img src={vector} alt="Decorative Vector" className="vector-image w-[250px] mt-4" />
                 </div>
         </motion.div>
-        <div ref={ref8} className='flex items-center gap-[35px] pt-[50px]'>
+        <div ref={ref8} className='flex flex-col sm:flex-row items-center gap-[35px] pt-[10px] sm:pt-[50px]'>
           <motion.img 
            src={frame120} 
            alt="Frame 120" 
-           className='w-[720px] h-[695px]'
+           className='w-[300px] sm:w-[720px] h-[300px] sm:h-[695px]'
            initial={{ x: -100, opacity: 0 }}
            animate={{
              x: inView8 ? 0 : -100,
@@ -97,22 +97,22 @@ const Menu = () => {
              duration: 1
             }}
            >
-            <span className='gap-[11px] pb-4 flex flex-col border-b-2 border-dashed border-orange'>
+            <span className='gap-[11px] text-center sm:text-left pb-4 flex flex-col border-b-2 border-dashed border-orange'>
               <h2 className='text-accent text-[40px] leading-[48px] font-[600]'>BOSS! Beef Suya</h2>
               <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>Mild / Spicy Grilled beef garnished with onion & cucumber.</h3>
               <p className='text-accent font-[600] text-[18px] leading-[27px]'>$20,00</p>
             </span>
-            <span className='gap-[11px] py-4 flex flex-col border-b-2 border-dashed border-orange'>
+            <span className='gap-[11px] text-center sm:text-left py-4 flex flex-col border-b-2 border-dashed border-orange'>
               <h2 className='text-accent text-[40px] leading-[48px] font-[600]'>Chillin&apos; Chicken Suya</h2>
               <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>Mild / Spicy Grilled chicken garnished with onion & cucumber.</h3>
               <p className='text-accent font-[600] text-[18px] leading-[27px]'>$30,00</p>
             </span>
-            <span className='gap-[11px] py-4 flex flex-col border-b-2 border-dashed border-orange'>
+            <span className='gap-[11px] text-center sm:text-left py-4 flex flex-col border-b-2 border-dashed border-orange'>
               <h2 className='text-accent text-[40px] leading-[48px] font-[600]'>Wingin&apos; it Suya</h2>
               <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>Mild / Spicy Grilled chicken wings garnished with onion & cucumber.</h3>
               <p className='text-accent font-[600] text-[18px] leading-[27px]'>$17,00</p>
             </span>
-            <button className='bg-accent rounded-sm text-primary w-[266px] h-[74px] p-[10px] gap-[10px] mt-4'>Order Now</button>
+            <button className='bg-accent flex justify-center items-center mx-auto rounded-sm text-primary w-[100px] sm:w-[266px] h-[40px] sm:h-[74px] p-[10px] gap-[10px] mt-4'>Order Now </button>
             </motion.div>
         </div>
       </section>
@@ -128,7 +128,7 @@ const Menu = () => {
                 transition={{ duration: 0.5 }}
                 className='flex justify-center items-center px-[74px]'>
                 <div className='relative flex flex-col items-center'>
-                 <p className='text-accent font-[600] text-[70px] leading-[84px] font-mont text-center'>Groovy Green Salad</p>
+                 <p className='text-accent font-[600] text-[30px] sm:text-[70px] leading-[84px] font-mont text-center'>Groovy Green Salad</p>
                  <img src={vector} alt="Decorative Vector" className="vector-image w-[250px] mt-4" />
                 </div>
         </motion.div>
@@ -190,9 +190,9 @@ const Menu = () => {
                     y: inView3 ? 0 : -200,
                 }}
                 transition={{ duration: 0.5 }}
-                className='flex justify-center items-center px-[74px]'>
+                className='flex justify-center items-center sm:px-[74px]'>
                 <div className='relative flex flex-col items-center'>
-                 <p className='text-accent font-[600] text-[70px] leading-[84px] font-mont text-center'>Suya Mix Burger</p>
+                 <p className='text-accent font-[600] text-[30px] sm:text-[70px] sm:leading-[84px] font-mont text-center'>Suya Mix Burger</p>
                  <img src={vector} alt="Decorative Vector" className="vector-image w-[250px] mt-4" />
                 </div>
         </motion.div>
@@ -256,7 +256,7 @@ const Menu = () => {
                 transition={{ duration: 0.5 }}
                 className='flex justify-center items-center px-[74px]'>
                 <div className='relative flex flex-col items-center'>
-                 <p className='text-accent font-[600] text-[70px] leading-[84px] font-mont text-center'>Drinks</p>
+                 <p className='text-accent font-[600] text-[30px] sm:text-[70px] leading-[84px] font-mont text-center'>Drinks</p>
                  <img src={vector} alt="Decorative Vector" className="vector-image w-[250px] mt-4" />
                 </div>
         </motion.div>
