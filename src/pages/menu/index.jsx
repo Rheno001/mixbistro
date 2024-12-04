@@ -39,6 +39,23 @@ const Menu = () => {
     triggerOnce: false,
     threshold: 0.5,
   });
+  const { ref: ref9, inView: inView9 } = useInView({
+    triggerOnce: false,
+    threshold: 0.5,
+  });
+  const { ref: ref10, inView: inView10 } = useInView({
+    triggerOnce: false,
+    threshold: 0.5,
+  });
+  const { ref: ref11, inView: inView11 } = useInView({
+    triggerOnce: false,
+    threshold: 0.5,
+  });
+  const { ref: ref12, inView: inView12 } = useInView({
+    triggerOnce: false,
+    threshold: 0.5,
+  });
+
   return (
     <div className="menu-container hero overflow-hidden">
       <motion.img
@@ -63,13 +80,14 @@ const Menu = () => {
           }}
           transition={{ duration: 0.5 }}
           className='flex justify-center items-center px-[74px]'>
-          <div className='relative flex flex-col mt-[80px] sm:mt-[5px] items-center'>
+          <div className='relative flex flex-col lg:mt-[80px] sm:mt-[5px] items-center'>
             <p className='text-accent font-[600] text-[40px] sm:text-[70px] leading-[60px] font-mont text-center'>Suya</p>
             <img src={vector} alt="Decorative Vector" className="vector-image w-[250px] sm:mt-4" />
           </div>
         </motion.div>
-        <div ref={ref8} className='suya flex flex-col lg:flex-row items-center gap-[35px] pt-[10px] sm:pt-[50px]'>
+        <div className='suya flex flex-col lg:flex-row items-center gap-[35px] pt-[10px] sm:pt-[50px]'>
           <motion.img
+            ref={ref8}
             src={frame120}
             alt="Frame 120"
             className='w-[300px] sm:w-[60%] h-[300px] sm:h-[60%]'
@@ -85,11 +103,12 @@ const Menu = () => {
             }}
           />
           <motion.div
+            ref={ref9}
             className='text font-mont'
             initial={{ x: 100, opacity: 0 }}
             animate={{
-              x: inView8 ? 0 : 100,
-              opacity: inView8 ? 1 : 0
+              x: inView9 ? 0 : 100,
+              opacity: inView9 ? 1 : 0
             }}
             transition={{
               type: "spring",
@@ -132,8 +151,9 @@ const Menu = () => {
             <img src={vector} alt="Decorative Vector" className="vector-image w-[250px] sm:mt-4" />
           </div>
         </motion.div>
-        <div ref={ref5} className='flex flex-col lg:flex-row items-center gap-[35px] pt-[10px] sm:pt-[50px]'>
+        <div className='flex flex-col lg:flex-row items-center gap-[35px] pt-[10px] sm:pt-[50px]'>
           <motion.img
+            ref={ref5}
             src={des1}
             alt="Frame 120"
             className='w-[300px] sm:w-[60%] h-[300px] sm:h-[60%]'
@@ -149,11 +169,12 @@ const Menu = () => {
             }}
           />
           <motion.div
+            ref={ref10}
             className='text font-mont'
             initial={{ x: 100, opacity: 0 }}
             animate={{
-              x: inView5 ? 0 : 100,
-              opacity: inView5 ? 1 : 0
+              x: inView10 ? 0 : 100,
+              opacity: inView10 ? 1 : 0
             }}
             transition={{
               type: "spring",
@@ -196,8 +217,9 @@ const Menu = () => {
             <img src={vector} alt="Decorative Vector" className="vector-image w-[250px] sm:mt-4" />
           </div>
         </motion.div>
-        <div ref={ref6} className='flex flex-col lg:flex-row items-center gap-[35px] pt-[10px] sm:pt-[50px]'>
+        <div className='flex flex-col lg:flex-row items-center gap-[35px] pt-[10px] sm:pt-[50px]'>
           <motion.img
+            ref={ref6}
             src={des2}
             alt="Frame 120"
             className='w-[300px] sm:w-[60%] h-[300px] sm:h-[60%]'
@@ -213,11 +235,12 @@ const Menu = () => {
             }}
           />
           <motion.div
+            ref={ref11}
             className='text font-mont'
             initial={{ x: 100, opacity: 0 }}
             animate={{
-              x: inView6 ? 0 : 100,
-              opacity: inView6 ? 1 : 0
+              x: inView11 ? 0 : 100,
+              opacity: inView11 ? 1 : 0
             }}
             transition={{
               type: "spring",
@@ -245,6 +268,7 @@ const Menu = () => {
         </div>
 
       </section>
+
       <section className="hero-section py-[70px]  px-[10%] lg:px-[80px] gap-[28px]">
         <motion.div
           ref={ref4}
@@ -260,8 +284,9 @@ const Menu = () => {
             <img src={vector} alt="Decorative Vector" className="vector-image w-[250px] sm:mt-4" />
           </div>
         </motion.div>
-        <div ref={ref7} className='flex flex-col lg:flex-row items-center gap-[35px] pt-[10px] sm:pt-[50px]'>
+        <div className='flex flex-col lg:flex-row items-center gap-[35px] pt-[10px] sm:pt-[50px]'>
           <motion.img
+            ref={ref7}
             src={des2}
             alt="Frame 120"
             className='w-[300px] sm:w-[60%] h-[300px] sm:h-[60%]'
@@ -277,11 +302,12 @@ const Menu = () => {
             }}
           />
           <motion.div
+            ref={ref12}
             className='text font-mont'
             initial={{ x: 100, opacity: 0 }}
             animate={{
-              x: inView7 ? 0 : 100,
-              opacity: inView7 ? 1 : 0
+              x: inView12 ? 0 : 100,
+              opacity: inView12 ? 1 : 0
             }}
             transition={{
               type: "spring",

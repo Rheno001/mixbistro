@@ -10,7 +10,7 @@ const Nav = () => {
     };
 
     return (
-        <div className={`bg-${isOpen ? 'primary' : 'secondary'} w-full relative z-[300]`}>
+        <div className={`bg-${isOpen ? 'primary' : 'secondary'} w-full relative z-[10000]`}>
             <div className="px-4 lg:px-[80px] py-[30px] text-accent font-[600] text-[25px] flex flex-row-reverse lg:flex-row justify-between items-center z-[100]">
                 {/* Hamburger Menu Button - Only visible on mobile/tablet */}
                 <button
@@ -36,7 +36,7 @@ const Nav = () => {
 
             {/* Mobile Menu - Slides down when hamburger is clicked */}
             <div
-                className={`lg:hidden absolute w-full flex items-start px-[20px] pr-[50px] overflow-hidden bg-accent transition-all duration-300 ease-in-out ${isOpen ? 'h-screen opacity-100' : 'h-screen opacity-0 overflow-hidden'
+                className={`lg:hidden absolute w-full flex items-start px-[20px] pr-[50px] overflow-hidden bg-accent z-[10000] transition-all duration-300 ease-in-out ${isOpen ? 'h-screen z-[1000] opacity-100' : 'h-screen opacity-0 z-[1000] overflow-hidden'
                     }`}
             >
                 <div className="flex flex-col items-start gap-6 py-6">
