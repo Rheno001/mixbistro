@@ -56,10 +56,10 @@ const Menu = () => {
       <section className="hero-section bg-primary py-[20px] sm:py-[70px] px-[80px] gap-[28px]">
         <motion.div
                 ref={ref1}
-                initial={{ opacity: 0, y: -200 }}
+                initial={{ opacity: 0, y: -100 }}
                 animate={{
                     opacity: inView1 ? 1 : 0,
-                    y: inView1 ? 0 : -200,
+                    y: inView1 ? 0 : -100,
                 }}
                 transition={{ duration: 0.5 }}
                 className='flex justify-center items-center px-[74px]'>
