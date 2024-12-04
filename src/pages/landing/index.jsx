@@ -29,6 +29,9 @@ import baki from './../../assets/blackvector.png'
 import babe from './../../assets/Frame 255.png'
 import babeMob from './../../assets/enjoyMob.png'
 import about from './../../assets/about.png'
+import order1 from './../../assets/order1.png'
+import slide2 from './../../assets/slide2.png'
+import slide3 from './../../assets/slide3.png'
 import aboutMob from './../../assets/aboutMob.png'
 import OrderCard from '../../components/OrderCard'
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -348,19 +351,16 @@ const Landing = () => {
                         className='flex justify-center items-center w-[100%] min-[1824px]:w-[80%]'
                     >
                         <SwiperSlide>
-                            <OrderCard />
+                            <OrderCard img={order1} head={'BOSS! Beef Suya'} desc={'Mild / Spicy Grilled beef garnished with onion & cucumber.'} amt={'$35.00'} />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <OrderCard />
+                            <OrderCard img={slide2} head={'Suya Mix Burger'} desc={'Mild / Spicy Grilled beef garnished with onion & cucumber.'} amt={'$12.99'} />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <OrderCard />
+                            <OrderCard img={slide3} head={'Groovy Green Salad'} desc={'Mild / Spicy Grilled beef garnished with onion & cucumber.'} amt={'$15.00'} />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <OrderCard />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <OrderCard />
+                            <OrderCard img={order1} head={'BOSS! Beef Suya'} desc={'Mild / Spicy Grilled beef garnished with onion & cucumber.'} amt={'$35.00'} />
                         </SwiperSlide>
                     </Swiper>
 
