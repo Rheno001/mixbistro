@@ -6,13 +6,17 @@ import tik from '../assets/tik.svg'
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
-    return (<div className="bg-secondary pb-[70px] text-orange">
+    const handleClick = () => {
+        window.scrollTo(0, 0); // Scroll to the top
+    };
+
+    return (<div className="bg-secondary foot pb-[70px] text-orange">
         <img src={footer} alt="" className='w-full sm:w-[110%]' />
         <div className=' pt-[76px] flex flex-col items-center gap-[24px]'>
             <div className='flex justify-center items-center px-[20px] sm:px-[0] gap-[50px] text-[25px] font-[600]'>
-                <Link to={'/menu'} className='text-[20px] sm:text-[30px]'>Menu</Link>
-                <Link to={'/.'} className='text-[20px] sm:text-[30px]'>Our Story</Link>
-                <Link to={'/catering'} className='text-[20px] sm:text-[30px]'>Catering</Link>
+                <Link onClick={handleClick} to={'/menu'} className='text-[20px] sm:text-[30px]'>Menu</Link>
+                <Link onClick={handleClick} to={'/.'} className='text-[20px] sm:text-[30px]'>Our Story</Link>
+                <Link onClick={handleClick} to={'/catering'} className='text-[20px] sm:text-[30px]'>Catering</Link>
             </div>
 
             <div className='flex justify-center items-center'>

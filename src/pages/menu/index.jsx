@@ -40,11 +40,11 @@ const Menu = () => {
     threshold: 0.5,
   });
   return (
-    <div className="menu-container bg-primary overflow-hidden">
+    <div className="menu-container hero overflow-hidden">
       <motion.img 
         src={logo} 
         alt="Restaurant Logo" 
-        className="menu-logo"
+        className="px-[65px] pt-8 sm:pt-20"
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{
@@ -53,7 +53,7 @@ const Menu = () => {
           duration: 2.5
         }}
       />
-      <section className="hero-section bg-primary py-[70px] px-[80px] gap-[28px]">
+      <section className="hero-section hero py-[70px] px-[80px] gap-[28px]">
         <motion.div
                 ref={ref1}
                 initial={{ opacity: 0, y: -200 }}
@@ -117,7 +117,7 @@ const Menu = () => {
         </div>
       </section>
 
-      <section className="hero-section bg-primary py-[70px] px-[80px] gap-[28px]">
+      <section className="hero-section py-[70px] px-[80px] gap-[28px]">
         <motion.div
                 ref={ref2}
                 initial={{ opacity: 0, y: -200 }}
@@ -181,7 +181,7 @@ const Menu = () => {
         </div>
         
       </section>
-      <section className="hero-section bg-primary py-[70px] px-[80px] gap-[28px]">
+      <section className="hero-section py-[70px] px-[80px] gap-[28px]">
       <motion.div
                 ref={ref3}
                 initial={{ opacity: 0, y: -200 }}
@@ -245,7 +245,7 @@ const Menu = () => {
         </div>
         
       </section>
-      <section className="hero-section bg-primary py-[70px] px-[80px] gap-[28px]">
+      <section className="hero-section py-[70px] px-[80px] gap-[28px]">
       <motion.div
                 ref={ref4}
                 initial={{ opacity: 0, y: -200 }}
