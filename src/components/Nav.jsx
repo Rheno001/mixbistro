@@ -17,7 +17,6 @@ const Nav = () => {
                     <span className={`block h-0.5 w-6 bg-accent transition-opacity duration-300 ${isOpen ? 'opacity-0' : ''}`}></span>
                     <span className={`block h-0.5 w-6 bg-accent transition-transform duration-300 ${isOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
                 </button>
-
                 {/* Desktop Navigation */}
                 <Link className='hidden lg:flex w-[33%] justify-start items-start' to={'/menu'}>
                     Menu

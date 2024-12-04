@@ -5,7 +5,6 @@ import pic1 from '../../assets/pic1.png'
 import pic2 from '../../assets/pic2.png'
 import pic3 from '../../assets/pic3.png'
 import pic4 from '../../assets/pic4.png'
-import ellipse from '../../assets/ellipse.png'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useInView } from "react-intersection-observer";
 import {
@@ -33,7 +32,7 @@ const Catering = () => {
 
 
     return (
-        <div className="menu-container bg-primary overflow-hidden">
+        <div className="menu-container bg-primary hero overflow-hidden">
             <motion.img
                 src={catering}
                 alt="Catering Image"
@@ -57,13 +56,11 @@ const Catering = () => {
                     }}
                     transition={{ duration: 0.5 }}
                     className='flex justify-center items-center px-[74px]'>
-                    <div className='relative flex flex-col items-center mt-[40px] sm:mt-[80px]'>
+                    <div className='relative z-[500] flex flex-col items-center mt-[40px] sm:mt-[80px]'>
                         <p className='text-accent font-[600] text-[22px] sm:text-[70px] leading-[48px]md:leading-[84px] font-mont text-center'>Our Catering Services</p>
                         <img src={vector} alt="Decorative Vector" className="vector-image w-[250px] mt-4" />
                     </div>
                 </motion.div>
-
-
 
 
                 <div className='carousel'>
@@ -74,8 +71,15 @@ const Catering = () => {
                             y: inView11 ? 0 : 100,
                         }}
                         transition={{ duration: 0.5 }} className='flex justify-center items-center mt-[40px] sm:mt-[80px] flex-col relative'>
-                        <img src={ellipse} alt="" className='absolute z-[400]  -top-[15%]' />
-                        <img src={ellipse} alt="" className='absolute z-[400]  -bottom-[16%]' />
+                        {/* <img src={ellipse} alt="" className='absolute z-[400] w-[100vw] -top-[15%]' /> */}
+                        <div
+                            className="w-[99vw] hero h-[40%] absolute z-[400] -top-[19%] clip-path-ellipse"
+                        >
+                        </div>
+                        <div
+                            className="w-[99vw] hero h-[40%] absolute z-[400] -bottom-[19%] clip-path-ellipse"
+                        >
+                        </div>
                         <Swiper
                             modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                             spaceBetween={20}

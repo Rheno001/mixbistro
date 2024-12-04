@@ -19,15 +19,44 @@
 }
 
 .sliding-text {
-  display: flex;
-  animation: slide 2s linear infinite; /* Adjust timing for smoothness */
+  animation: slide 20s linear infinite;
 }
 
 @keyframes slide {
   0% {
-    transform: translateX(0); /* Start from the initial position */
+    transform: translateX(100%);
   }
   100% {
-    transform: translateX(-50%); /* Slide halfway, covering the original set */
+    transform: translateX(-100%);
   }
+}
+
+.hero {
+  background-color: #8D2D2D; 
+  background-image:url("./assets/noise.svg");
+  background-repeat: repeat;
+  /* background-size: cover; */
+  background-position: center;
+  /* background-blend-mode: overlay; */
+}
+
+.foot {
+  background-color: #A5513D; 
+  background-image:url("./assets/noise.svg");
+  background-repeat: repeat;
+  /* background-size: cover; */
+  background-position: center;
+  /* background-blend-mode: overlay; */
+}
+
+.noise {
+  background-image:url("./assets/noise.svg");
+  background-repeat: repeat;
+  /* background-size: cover; */
+  background-position: center;
+  /* background-blend-mode: overlay; */
+}
+
+.clip-path-ellipse {
+  clip-path: ellipse(50% 40% at 50% 50%);
 }
