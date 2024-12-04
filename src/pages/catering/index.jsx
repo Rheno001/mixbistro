@@ -57,8 +57,8 @@ const Catering = () => {
                     transition={{ duration: 0.5 }}
                     className='flex justify-center items-center px-[74px]'>
                     <div className='relative z-[500] flex flex-col items-center mt-[40px] sm:mt-[80px]'>
-                        <p className='text-accent font-[600] text-[22px] sm:text-[70px] leading-[48px]md:leading-[84px] font-mont text-center'>Our Catering Services</p>
-                        <img src={vector} alt="Decorative Vector" className="vector-image w-[250px] mt-4" />
+                        <p className='text-center text-[25px] lg:text-[70px] font-[600] text-accent lg:leading-[84px] mb-[10px]'>Our Catering Services</p>
+                        <img src={vector} alt="Decorative Vector" className="vector-image w-[200px] lg:w-[350px] mt-2" />
                     </div>
                 </motion.div>
 
@@ -121,13 +121,13 @@ const Catering = () => {
 
                 <div className='flex items-center px-[40px] sm:px-[80px] py-[50px] sm:w-[72%] mx-auto relative z-[500]'>
                     <span className='text-center sm:mx-[20px]'>
-                        <h2 className='text-accent sm:text-[40px] sm:leading-[48px] font-[600]'>Full Pan Party</h2>
-                        <h3 className='text-white font-[500] text-[15px] sm:text-[20px] sm:leading-[37.5px]'>Mild / Spicy Grilled beef garnished with onion & cucumber.</h3>
+                        <h2 className='text-center text-accent text-[20px] lg:text-[40px] font-[600] pb-[10px] lg:pb-[20px]'>Full Pan Party</h2>
+                        <h3 className='text-center text-[14px] lg:text-[25px] font-[500] lg:leading-[38px] text-white pb-[15px] lg:pb-[30px]'>Mild / Spicy Grilled beef garnished with onion & cucumber.</h3>
                         <p className='text-accent font-[600] text-[18px] sm:leading-[27px]'>$170,00</p>
                     </span>
                     <span className='text-center sm:mx-[20px]'>
-                        <h2 className='text-accent sm:text-[40px] sm:leading-[48px] font-[600]'>Small Pan Snack</h2>
-                        <h3 className='text-white font-[500] text-[15px] sm:text-[20px] sm:leading-[37.5px]'>Mild / Spicy Grilled chicken garnished with onion & cucumber.</h3>
+                        <h2 className='text-center text-accent text-[20px] lg:text-[40px] font-[600] pb-[10px] lg:pb-[20px]'>Small Pan Snack</h2>
+                        <h3 className='text-center text-[14px] lg:text-[25px] font-[500] lg:leading-[38px] text-white pb-[15px] lg:pb-[30px]'>Mild / Spicy Grilled chicken garnished with onion & cucumber.</h3>
                         <p className='text-accent font-[600] text-[18px] sm:leading-[27px]'>$300,00</p>
                     </span>
                 </div>
