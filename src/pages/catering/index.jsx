@@ -83,7 +83,12 @@ const Catering = () => {
                         <Swiper
                             modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                             spaceBetween={20}
-                            slidesPerView={3}
+                            slidesPerView={2}  // Default for mobile
+                        breakpoints={{
+                            640: {  // sm breakpoint
+                                slidesPerView: 3
+                            }
+                        }}
                             autoplay={{
                                 delay: 5000,
                                 disableOnInteraction: false,
