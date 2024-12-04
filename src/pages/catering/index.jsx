@@ -56,7 +56,7 @@ const Catering = () => {
                     }}
                     transition={{ duration: 0.5 }}
                     className='flex justify-center items-center px-[74px]'>
-                    <div className='relative z-[500] flex flex-col items-center mt-[40px] sm:mt-[80px]'>
+                    <div className='relative z-[200] flex flex-col items-center mt-[40px] sm:mt-[80px]'>
                         <p className='text-center text-[25px] lg:text-[70px] font-[600] text-accent lg:leading-[84px] mb-[10px]'>Our Catering Services</p>
                         <img src={vector} alt="Decorative Vector" className="vector-image w-[200px] lg:w-[350px] mt-2" />
                     </div>
