@@ -10,8 +10,8 @@ const Nav = () => {
     };
 
     return (
-        <div className="bg-secondary w-full relative">
-            <div className="px-4 lg:px-[80px] py-[30px] text-accent font-[600] text-[25px] flex justify-between items-center">
+        <div className="bg-secondary w-full relative z-[300]">
+            <div className="px-4 lg:px-[80px] py-[30px] text-accent font-[600] text-[25px] flex flex-row-reverse lg:flex-row justify-between items-center">
                 {/* Hamburger Menu Button - Only visible on mobile/tablet */}
                 <button
                     onClick={() => setIsOpen(!isOpen)}
