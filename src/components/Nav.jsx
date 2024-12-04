@@ -36,7 +36,7 @@ const Nav = () => {
 
             {/* Mobile Menu - Slides down when hamburger is clicked */}
             <div
-                className={`lg:hidden absolute w-full bg-secondary transition-all duration-300 ease-in-out ${isOpen ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
+                className={`lg:hidden absolute w-full flex items-start px-[20px] bg-accent transition-all duration-300 ease-in-out ${isOpen ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
                     }`}
             >
                 <div className="flex flex-col items-center gap-6 py-6">
@@ -46,7 +46,7 @@ const Nav = () => {
                             handleClick()
                             setIsOpen(false)
                         }}
-                        className="text-accent hover:opacity-80 transition-opacity"
+                        className="text-primary bg-blue-500 hover:opacity-80 transition-opacity border-b-2 border-dashed border-primary"
                     >
                         Menu
                     </Link>
@@ -56,7 +56,7 @@ const Nav = () => {
                             handleClick
                             setIsOpen(false)
                         }}
-                        className="text-accent hover:opacity-80 transition-opacity"
+                        className="text-primary hover:opacity-80 transition-opacity border-b-2 border-dashed border-primary"
                     >
                         Our Story
                     </Link>
@@ -66,7 +66,7 @@ const Nav = () => {
                             handleClick
                             setIsOpen(false)
                         }}
-                        className="text-accent hover:opacity-80 transition-opacity"
+                        className="text-primary hover:opacity-80 transition-opacity border-b-2 border-dashed border-primary"
                     >
                         Catering
                     </Link>
