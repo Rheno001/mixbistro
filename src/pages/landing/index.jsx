@@ -46,10 +46,10 @@ import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
 
 const Landing = () => {
-    const { ref: ref3, inView: inView3 } = useInView({
-        triggerOnce: false,
-        threshold: 0.5,
-    });
+    // const { ref: ref3, inView: inView3 } = useInView({
+    //     triggerOnce: false,
+    //     threshold: 0.5,
+    // });
     const { ref: ref2, inView: inView2 } = useInView({
         triggerOnce: false,
         threshold: 0.5,
@@ -126,10 +126,30 @@ const Landing = () => {
         triggerOnce: false,
         threshold: 0.5,
     });
+    const { ref: ref21, inView: inView21 } = useInView({
+        triggerOnce: false,
+        threshold: 0.5,
+    });
+    const { ref: ref22, inView: inView22 } = useInView({
+        triggerOnce: false,
+        threshold: 0.5,
+    });
+    const { ref: ref23, inView: inView23 } = useInView({
+        triggerOnce: false,
+        threshold: 0.5,
+    });
+    const { ref: ref24, inView: inView24 } = useInView({
+        triggerOnce: false,
+        threshold: 0.5,
+    });
+    const { ref: ref25, inView: inView25 } = useInView({
+        triggerOnce: false,
+        threshold: 0.5,
+    });
 
     return (<div className='bg-primary overflow-hidden hero'>
-        <div className='flex flex-col w-full pt-[50px] gap-[15px] relative'>
-            <div className="absolute flex justify-center items-center inset-x-0 z-[5] lg:inset-0 m-auto  lg:mx-0">
+        <div className='flex flex-col w-full pt-[30px] lg:pt-[50px] gap-[15px] relative'>
+            <div className="absolute flex justify-center items-center mt-[30px] lg:mt-0 inset-x-0 z-[5] lg:inset-0 m-auto lg:mx-0">
 
                 <motion.div ref={ref2}
                     initial={{ scale: 0.5 }} // Start smaller (50% of the original size)
@@ -157,15 +177,16 @@ const Landing = () => {
                     />
                 </motion.div>
             </div>
+
             <motion.div
-                ref={ref3}
+                // ref={ref3}
                 initial={{ opacity: 0, y: -100 }}
                 animate={{
-                    opacity: inView3 ? 1 : 0,
-                    y: inView3 ? 0 : -100,
+                    opacity:  1,
+                    y:  0,
                 }}
                 transition={{ duration: 0.5 }}
-                className='flex justify-between w-full items-center px-[20px] lg:px-[74px]'>
+                className='flex lg:hidden justify-between relative z-[200] pb-[30px] w-full items-center pt-[0px] px-[20px] lg:px-[74px]'>
                 <div className='relative flex flex-col items-start'>
                     <img src={smallL} alt="" className='lg:w-[auto] w-[10%]' /><img src={art} alt="" className='w-[40%] lg:w-auto' />
                 </div>
@@ -173,6 +194,23 @@ const Landing = () => {
                     <img src={smallR} alt="" className='lg:w-[auto] w-[10%]' /><img src={art} alt="" className='w-[40%] lg:w-auto' />
                 </div>
             </motion.div>
+            <motion.div
+                ref={ref25}
+                initial={{ opacity: 0, y: -100 }}
+                animate={{
+                    opacity: inView25 ? 1 : 0,
+                    y: inView25 ? 0 : -100,
+                }}
+                transition={{ duration: 0.5 }}
+                className='lg:flex hidden justify-between relative z-[200] pb-[30px] w-full items-center pt-[0px] px-[20px] lg:px-[74px]'>
+                <div className='relative flex flex-col items-start'>
+                    <img src={smallL} alt="" className='lg:w-[auto] w-[10%]' /><img src={art} alt="" className='w-[40%] lg:w-auto' />
+                </div>
+                <div className='relative flex flex-col items-end'>
+                    <img src={smallR} alt="" className='lg:w-[auto] w-[10%]' /><img src={art} alt="" className='w-[40%] lg:w-auto' />
+                </div>
+            </motion.div>
+
             <motion.div ref={ref4}
                 initial={{ opacity: 0, x: 100 }}
                 animate={{
@@ -236,13 +274,13 @@ const Landing = () => {
             </div>
 
             <div className='flex flex-col lg:flex-row justify-between items-center mb-[20px] lg:mb-[70px]'>
-                <motion.img ref={ref8}
-                    initial={{ opacity: 0, x: -100 }}
+                <motion.img ref={ref24}
+                    initial={{ opacity: 0, x: -200 }}
                     animate={{
-                        opacity: inView8 ? 1 : 0,
-                        x: inView8 ? 0 : -100,
+                        opacity: inView24 ? 1 : 0,
+                        x: inView24 ? 0 : -200,
                     }}
-                    transition={{ duration: 0.5 }} src={about} className='hidden lg:block lg:w-[60%]' alt="" />
+                    transition={{ duration: 0.5 }} src={about} className='hidden lg:block  lg:w-[60%]' alt="" />
                 <motion.img ref={ref8}
                     initial={{ opacity: 0, x: -100 }}
                     animate={{
@@ -297,7 +335,7 @@ const Landing = () => {
                                 slidesPerView: 3, // 3 slides per view for screens >= 1024px
                             },
                             1440: {
-                                slidesPerView: 4, // 4 slides per view for screens >= 1440px
+                                slidesPerView: 3, // 4 slides per view for screens >= 1440px
                             },
                         }} autoplay={{
                             delay: 5000,
@@ -354,17 +392,17 @@ const Landing = () => {
                         opacity: inView13 ? 1 : 0,
                         y: inView13 ? 0 : 100,
                     }}
-                    transition={{ duration: 0.5 }} className=' hidden lg:flex justify-center items-center mt-[80px] pb-[70px]'>
-                    <img src={food} alt="" className='hidden lg:block lg:w-[80%]' />
+                    transition={{ duration: 0.5 }} className='hidden lg:flex justify-center items-center mt-[80px] pb-[70px]'>
+                    <img src={food} alt="" className='lg:w-[80%]' />
                 </motion.div>
-                <motion.div ref={ref13}
+                <motion.div ref={ref21}
                     initial={{ opacity: 0, y: 100 }}
                     animate={{
-                        opacity: inView13 ? 1 : 0,
-                        y: inView13 ? 0 : 100,
+                        opacity: inView21 ? 1 : 0,
+                        y: inView21 ? 0 : 100,
                     }}
                     transition={{ duration: 0.5 }} className='flex lg:hidden justify-center items-center mt-[20px] lg:mt-[80px] pb-[20px] lg:pb-[70px]'>
-                    <img src={foodMob} alt="" className='lg:hidden w-full' />
+                    <img src={foodMob} alt="" className='w-full' />
                 </motion.div>
             </div>
         </div>
@@ -380,11 +418,11 @@ const Landing = () => {
             <div className='flex justify-center items-center text-accent my-[10px] lg:hidden'>
                 <button className='bg-primary rounded-[5px] px-[14px] lg:px-[62px] py-[7px] lg:py-[22px] text-[16px] lg:text-[25px] font-[600]'>Order Now</button>
             </div>
-            <motion.img ref={ref14}
+            <motion.img ref={ref22}
                 initial={{ opacity: 0, x: -100 }}
                 animate={{
-                    opacity: inView14 ? 1 : 0,
-                    x: inView14 ? 0 : -100,
+                    opacity: inView22 ? 1 : 0,
+                    x: inView22 ? 0 : -100,
                 }}
                 transition={{ duration: 0.5 }} src={babeMob} className='lg:hidden mt-[10px] lg:w-[30%]' alt="" />
 
@@ -453,11 +491,11 @@ const Landing = () => {
                 <img src={line} alt="" />
             </motion.div>
             <div className='flex flex-col lg:flex-row justify-between items-center lg:gap-[50px] pt-[20px] lg:pt-[80px]'>
-                <motion.img ref={ref18}
+                <motion.img ref={ref23}
                     initial={{ opacity: 0, x: -100 }}
                     animate={{
-                        opacity: inView18 ? 1 : 0,
-                        x: inView18 ? 0 : -100,
+                        opacity: inView23 ? 1 : 0,
+                        x: inView23 ? 0 : -100,
                     }}
                     transition={{ duration: 0.5 }} src={shipping} className='w-[65%] hidden lg:block' alt="" />
                 <motion.img ref={ref18}
@@ -474,8 +512,8 @@ const Landing = () => {
                         x: inView19 ? 0 : 100,
                     }}
                     transition={{ duration: 0.5 }} className='flex lg:w-[35%] flex-col items-start'>
-                    <h2 className='text-accent text-[16px] lg:text-[40px] font-[600] lg:leading-[48px] pt-[10px] lg:pt-[30px]'>Enjoy Suya Delivered Right to Your Door</h2>
-                    <p className='pt-[10px] lg:pt-[30px] text-[14px] lg:text-[18px] font-[500] lg:leading-[28px] text-white'>Experience the rich, smoky flavors of our suya, now available for shipping across the USA. No matter where you are, you can indulge in our authentic dishes and bring a taste of Nigeria to your home.</p>
+                    <h2 className='text-accent text-[16px] lg:text-[40px] font-[600] lg:leading-[48px] pt-[10px] lg:pt-[30px] text-center lg:text-left w-full'>Enjoy Suya Delivered Right to Your Door</h2>
+                    <p className='pt-[10px] lg:pt-[30px] text-center lg:text-left text-[14px] lg:text-[18px] font-[500] lg:leading-[28px] text-white'>Experience the rich, smoky flavors of our suya, now available for shipping across the USA. No matter where you are, you can indulge in our authentic dishes and bring a taste of Nigeria to your home.</p>
 
                     <div className='flex justify-center w-full items-center text-primary lg:mt-[50px] mt-[10px] lg:mb-[30px]'>
                         <button className='bg-accent rounded-[5px] px-[15px] lg:px-[62px] lg:py-[20px] py-[7px] lg:text-[25px] font-[600]'>View More</button>
