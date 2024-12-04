@@ -55,7 +55,7 @@ const Catering = () => {
                         y: inView4 ? 0 : -100,
                     }}
                     transition={{ duration: 0.5 }}
-                    className='flex justify-center items-center px-[74px]'>
+                    className='flex justify-center items-center px-[10%] lg:px-[74px]'>
                     <div className='relative z-[200] flex flex-col items-center mt-[40px] sm:mt-[80px]'>
                         <p className='text-center text-[25px] lg:text-[70px] font-[600] text-accent lg:leading-[84px] mb-[10px]'>Our Catering Services</p>
                         <img src={vector} alt="Decorative Vector" className="vector-image w-[200px] lg:w-[350px] mt-2" />
@@ -119,7 +119,7 @@ const Catering = () => {
 
 
 
-                <div className='flex items-center px-[40px] sm:px-[80px] py-[50px] sm:w-[72%] mx-auto relative z-[500]'>
+                <div className='flex items-start lg:items-center px-[10%] lg:px-[40px] sm:px-[10%px] py-[50px] sm:w-[72%] mx-auto relative z-[500]'>
                     <span className='text-center sm:mx-[20px]'>
                         <h2 className='text-center text-accent text-[20px] lg:text-[40px] font-[600] pb-[10px] lg:pb-[20px]'>Full Pan Party</h2>
                         <h3 className='text-center text-[14px] lg:text-[25px] font-[500] lg:leading-[38px] text-white pb-[15px] lg:pb-[30px]'>Mild / Spicy Grilled beef garnished with onion & cucumber.</h3>
