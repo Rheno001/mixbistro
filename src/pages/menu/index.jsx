@@ -53,7 +53,7 @@ const Menu = () => {
           duration: 2.5
         }}
       />
-      <section className="hero-section bg-primary py-[70px] px-[80px] gap-[28px]">
+      <section className="hero-section bg-primary py-[20px] sm:py-[70px] px-[80px] gap-[28px]">
         <motion.div
                 ref={ref1}
                 initial={{ opacity: 0, y: -200 }}
@@ -64,8 +64,8 @@ const Menu = () => {
                 transition={{ duration: 0.5 }}
                 className='flex justify-center items-center px-[74px]'>
                 <div className='relative flex flex-col items-center'>
-                 <p className='text-accent font-[600] text-[30px] sm:text-[70px] leading-[84px] font-mont text-center'>Suya</p>
-                 <img src={vector} alt="Decorative Vector" className="vector-image w-[250px] mt-4" />
+                 <p className='text-accent font-[600] text-[40px] sm:text-[70px] leading-[84px] font-mont text-center'>Suya</p>
+                 <img src={vector} alt="Decorative Vector" className="vector-image w-[250px] mt-0 sm:mt-4" />
                 </div>
         </motion.div>
         <div ref={ref8} className='flex flex-col sm:flex-row items-center gap-[35px] pt-[10px] sm:pt-[50px]'>
@@ -126,9 +126,9 @@ const Menu = () => {
                     y: inView2 ? 0 : -200,
                 }}
                 transition={{ duration: 0.5 }}
-                className='flex justify-center items-center px-[74px]'>
+                className='flex justify-center items-center px-50px sm:px-[74px]'>
                 <div className='relative flex flex-col items-center'>
-                 <p className='text-accent font-[600] text-[30px] sm:text-[70px] leading-[84px] font-mont text-center'>Groovy Green Salad</p>
+                 <p className='text-accent font-[600] text-[25px] sm:text-[70px] sm:leading-[84px] font-mont text-center'>Groovy Green Salad</p>
                  <img src={vector} alt="Decorative Vector" className="vector-image w-[250px] mt-4" />
                 </div>
         </motion.div>
