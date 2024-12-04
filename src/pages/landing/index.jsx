@@ -165,7 +165,7 @@ const Landing = () => {
                     y: inView3 ? 0 : -100,
                 }}
                 transition={{ duration: 0.5 }}
-                className='flex justify-between w-full items-center bg-green-300 px-[20px] lg:px-[74px]'>
+                className='flex justify-between w-full items-center px-[20px] lg:px-[74px]'>
                 <div className='relative flex flex-col items-start'>
                     <img src={smallL} alt="" className='lg:w-[auto] w-[10%]' /><img src={art} alt="" className='w-[40%] lg:w-auto' />
                 </div>
