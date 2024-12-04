@@ -49,10 +49,10 @@ const Catering = () => {
             <section>
                 <motion.div
                     ref={ref4}
-                    initial={{ opacity: 0, y: -200 }}
+                    initial={{ opacity: 0, y: -100 }}
                     animate={{
                         opacity: inView4 ? 1 : 0,
-                        y: inView4 ? 0 : -200,
+                        y: inView4 ? 0 : -100,
                     }}
                     transition={{ duration: 0.5 }}
                     className='flex justify-center items-center px-[74px]'>

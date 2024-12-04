@@ -44,7 +44,7 @@ const Menu = () => {
       <motion.img 
         src={logo} 
         alt="Restaurant Logo" 
-        className="px-[65px] pt-8 sm:pt-20"
+        className="px-[65px] pt-8 pb-10 sm:pt-20"
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{
