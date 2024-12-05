@@ -11,15 +11,15 @@ const Nav = () => {
 
     return (
         <div className={`bg-${isOpen ? 'primary' : 'secondary'} w-full relative z-[300]`}>
-            <div className="px-4 lg:px-[80px] py-[30px] text-accent font-[600] text-[25px] flex flex-row-reverse lg:flex-row justify-between items-center z-[100]">
+            <div className="px-4 lg:px-[80px] py-[10px] text-accent font-[600] text-[25px] flex flex-row-reverse lg:flex-row justify-between items-center z-[100]">
                 {/* Hamburger Menu Button - Only visible on mobile/tablet */}
                 <button
                     onClick={() => setIsOpen(!isOpen)}
-                    className="lg:hidden flex flex-col gap-1.5"
+                    className="lg:hidden flex flex-col gap-[5px]"
                 >
-                    <span className={`block h-0.5 w-6 bg-accent transition-transform duration-300 ${isOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
-                    <span className={`block h-0.5 w-6 bg-accent transition-opacity duration-300 ${isOpen ? 'opacity-0' : ''}`}></span>
-                    <span className={`block h-0.5 w-6 bg-accent transition-transform duration-300 ${isOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
+                    <span className={`block h-1 rounded-sm w-8 bg-accent transition-transform duration-300 ${isOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
+                    <span className={`block h-1 rounded-sm w-8 bg-accent transition-opacity duration-300 ${isOpen ? 'opacity-0' : ''}`}></span>
+                    <span className={`block h-1 rounded-sm w-8 bg-accent transition-transform duration-300 ${isOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
                 </button>
                 {/* Desktop Navigation */}
                 <Link onClick={handleClick} className='hidden lg:flex w-[33%] justify-start items-start' to={'/menu'}>
@@ -36,7 +36,7 @@ const Nav = () => {
 
             {/* Mobile Menu - Slides down when hamburger is clicked */}
             <div
-                className={`lg:hidden absolute w-full flex items-start px-[20px] pr-[50px] overflow-hidden bg-accent transition-all duration-300 ease-in-out ${isOpen ? 'h-screen opacity-100' : 'h-screen opacity-0 overflow-hidden'
+                className={`lg:hidden absolute w-full flex items-start px-[20px] pr-[50px] overflow-hidden bg-accent transition-all duration-300 ease-in-out ${isOpen ? 'h-auto opacity-100' : 'h-auto opacity-0 overflow-hidden'
                     }`}
             >
                 <div className="flex flex-col items-start gap-6 py-6">

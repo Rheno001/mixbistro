@@ -245,7 +245,7 @@ const Menu = () => {
         </div>
 
       </section>
-      <section className="hero-section py-[70px]  px-[10%] lg:px-[80px] gap-[28px]">
+      <section className="hero-section  py-[70px]  px-[10%] lg:px-[80px] gap-[28px]">
         <motion.div
           ref={ref4}
           initial={{ opacity: 0, y: -200 }}
