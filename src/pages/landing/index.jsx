@@ -397,7 +397,7 @@ const Landing = () => {
                     }}
                     transition={{ duration: 0.5 }} className='flex flex-col items-center'>
                     <h1 className='text-center text-[20px] lg:text-[70px] font-[600] text-accent lg:leading-[84px] mb-[5px] lg:mb-[10px] capitalize'>we serve healthy meals</h1>
-                    <img src={line} alt="" className='w-[100px] lg:w-auto' />
+                    <img src={line} alt="" className='w-[50%] lg:w-auto' />
                 </motion.div>
                 <motion.div ref={ref13}
                     initial={{ opacity: 0, y: 100 }}
@@ -504,7 +504,7 @@ const Landing = () => {
                 }}
                 transition={{ duration: 0.5 }} className='flex flex-col items-center'>
                 <h1 className='text-center text-[20px] lg:text-[70px] font-[600] text-accent lg:leading-[84px] mb-[5px] lg:mb-[10px] capitalize'>shipping nationwide in uS</h1>
-                <img src={line} alt="" />
+                <img src={line} alt="" className='w-[50%] lg:w-auto' />
             </motion.div>
             <div className='flex flex-col lg:flex-row justify-between items-center lg:gap-[50px] pt-[20px] lg:pt-[80px]'>
                 <motion.img ref={ref23}
