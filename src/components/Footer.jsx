@@ -4,13 +4,15 @@ import insta from '../assets/insta.svg'
 import fb from '../assets/fb.svg'
 import tik from '../assets/tik.svg'
 import { Link } from 'react-router-dom';
+// import noise from '../assets/noise.svg'
 
 const Footer = () => {
     const handleClick = () => {
         window.scrollTo(0, 0); // Scroll to the top
     };
 
-    return (<div className="bg-secondary foot pb-[70px] text-orange">
+    return (<div className="bg-secondary relative pb-[70px] text-orange">
+        {/* <img src={noise} className='absolute z-[100000] w-screen bg-repeat object-cover h-full' alt="" /> */}
         <img src={footer} alt="" className='w-full sm:w-[110%]' />
         <div className=' pt-[30px] flex flex-col items-center gap-[24px]'>
             <div className='flex justify-center items-center px-[20px] sm:px-[0] gap-[50px] text-[25px] font-[600]'>

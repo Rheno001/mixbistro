@@ -5,6 +5,7 @@ import vector from '../../assets/Vector.png'
 import frame120 from '../../assets/des.png'
 import des1 from '../../assets/des1.png'
 import des2 from '../../assets/des2.png'
+// import noise from '../../assets/noise.svg'
 
 const Menu = () => {
   const { ref: ref1, inView: inView1 } = useInView({
@@ -57,11 +58,12 @@ const Menu = () => {
   });
 
   return (
-    <div className="menu-container hero overflow-hidden">
+    <div className="menu-container bg-primary relative overflow-hidden">
+      {/* <img src={noise} className='absolute z-[100000] w-screen object-cover h-full' alt="" /> */}
       <motion.img
         src={logo}
         alt="Restaurant Logo"
-        className="px-[65px] pt-8 pb-10 sm:pt-20"
+        className="px-[65px] bg-primary pt-8 pb-10 sm:pt-20"
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{
@@ -70,7 +72,7 @@ const Menu = () => {
           duration: 2.5
         }}
       />
-      <section className="hero-section hero bg-primary py-[20px] sm:py-[70px] px-[5%] sm:px-[10%] lg:px-[80px] gap-[28px]">
+      <section className="hero-section  bg-primary py-[20px] sm:py-[70px] px-[10%] lg:px-[80px] gap-[28px]">
         <motion.div
           ref={ref1}
           initial={{ opacity: 0, y: -100 }}
