@@ -9,7 +9,11 @@ function App() {
   return (
     <>
         <BrowserRouter>
-          <div className="font-mont">
+          <div className="font-mont relative">
+          {/* <img src={noise} className='absolute z-[10000] w-screen bg-repeat object-contain h-full' alt="" /> */}
+          <div
+            className="absolute inset-0 z-[10000] hero bg-repeat"
+          ></div>
             <Nav />
             <Routes>
               <Route path="/" element={<Landing />} />

@@ -13,6 +13,9 @@ export default {
       fontFamily: {
         mont: ["Montserrat", "sans - serif"],
       },
+      backgroundImage: {
+        noise: "url('/src/assets/noise.svg)",
+      },
     },
   },
   plugins: [],

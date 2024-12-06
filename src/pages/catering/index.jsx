@@ -19,6 +19,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
+// import noise from '../../assets/noise.svg'
+
 
 const Catering = () => {
     const { ref: ref4, inView: inView4 } = useInView({
@@ -32,7 +34,9 @@ const Catering = () => {
 
 
     return (
-        <div className="menu-container bg-primary hero overflow-hidden">
+        <div className=" bg-primary relative overflow-hidden">
+            {/* <img src={noise} className='absolute z-[100000] w-screen object-cover h-full' alt="" /> */}
+
             <motion.img
                 src={catering}
                 alt="Catering Image"
@@ -70,25 +74,25 @@ const Catering = () => {
                             opacity: inView11 ? 1 : 0,
                             y: inView11 ? 0 : 100,
                         }}
-                        transition={{ duration: 0.5 }} className='flex justify-center items-center mt-[40px] sm:mt-[80px] flex-col relative'>
-                        {/* <img src={ellipse} alt="" className='absolute z-[400] w-[100vw] -top-[15%]' /> */}
+                        transition={{ duration: 0.5 }} className='flex justify-center items-center mt-[40px] sm:mt-[80px] flex-col z-[10] relative'>
+
                         <div
-                            className="w-[99vw] hero h-[40%] absolute z-[400] -top-[19%] clip-path-ellipse"
+                            className="w-[99vw] bg-primary h-[40%] absolute z-[400000] -top-[19%] clip-path-ellipse"
                         >
                         </div>
                         <div
-                            className="w-[99vw] hero h-[40%] absolute z-[400] -bottom-[19%] clip-path-ellipse"
+                            className="w-[99vw] bg-primary h-[40%] absolute z-[400000] -bottom-[19%] clip-path-ellipse"
                         >
                         </div>
                         <Swiper
                             modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                             spaceBetween={20}
                             slidesPerView={2}  // Default for mobile
-                        breakpoints={{
-                            640: {  // sm breakpoint
-                                slidesPerView: 3
-                            }
-                        }}
+                            breakpoints={{
+                                640: {  // sm breakpoint
+                                    slidesPerView: 3
+                                }
+                            }}
                             autoplay={{
                                 delay: 5000,
                                 disableOnInteraction: false,

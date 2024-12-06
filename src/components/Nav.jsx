@@ -11,7 +11,7 @@ const Nav = () => {
 
     return (
         <div className={`bg-${isOpen ? 'primary' : 'secondary'} w-full relative z-[10000]`}>
-            <div className="px-4 lg:px-[80px] py-[30px] text-accent font-[600] text-[25px] flex flex-row-reverse lg:flex-row justify-between items-center z-[100]">
+            <div className="px-4 lg:px-[80px] hero relative py-[30px] text-accent font-[600] text-[25px] flex flex-row-reverse lg:flex-row justify-between items-center z-[100000]">
                 {/* Hamburger Menu Button - Only visible on mobile/tablet */}
                 <button
                     onClick={() => setIsOpen(!isOpen)}

@@ -1,9 +1,9 @@
 import text from '../../assets/suya.png'
 import text2 from '../../assets/suya-border.png'
 import left from '../../assets/left.png'
-import leftNav from '../../assets/leftNav.png'
+// import leftNav from '../../assets/leftNav.png'
 import right from '../../assets/right.png'
-import rightNav from '../../assets/rightNav.png'
+// import rightNav from '../../assets/rightNav.png'
 import hero from '../../assets/hero.png'
 import string from '../../assets/string.png'
 import art from '../../assets/art.png'
@@ -47,6 +47,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
+// import noise from '../../assets/noise.svg'
 
 const Landing = () => {
     // const { ref: ref3, inView: inView3 } = useInView({
@@ -150,7 +151,9 @@ const Landing = () => {
         threshold: 0.5,
     });
 
-    return (<div className='bg-primary overflow-hidden hero'>
+    return (<div className='bg-primary overflow-hidden relative'>
+        {/* <img src={noise} className='absolute z-[100000] w-screen bg-repeat object-cover h-full' alt="" /> */}
+
         <div className='flex flex-col w-full pt-[30px] lg:pt-[50px] gap-[15px] relative'>
             <div className="absolute flex justify-center items-center mt-[30px] lg:mt-0 inset-x-0 z-[5] lg:inset-0 m-auto lg:mx-0">
 
@@ -232,7 +235,7 @@ const Landing = () => {
             </motion.div>
 
             <div className='flex justify-center items-center text-primary mt-[50px] mb-[30px]'>
-                <button className='bg-accent rounded-[5px] px-[14px] lg:px-[62px] py-[7px] lg:py-[22px] text-[16px] lg:text-[25px] font-[600]'>Order Now</button>
+                <button className='relative z-[100000] hero bg-accent rounded-[5px] px-[14px] lg:px-[62px] py-[7px] lg:py-[22px] text-[16px] lg:text-[25px] font-[600]'>Order Now</button>
             </div>
         </div>
         <div className='lg:pt-[70px]'>
@@ -325,7 +328,7 @@ const Landing = () => {
                         opacity: inView11 ? 1 : 0,
                         y: inView11 ? 0 : 100,
                     }}
-                    transition={{ duration: 0.5 }} className='flex justify-center items-center gap-[40px] mt-[20px] lg:mt-[80px] flex-col'>
+                    transition={{ duration: 0.5 }} className='flex justify-center items-center gap-[40px] mt-[20px] lg:mt-[80px] flex-col  relative z-[1000000]'>
                     <Swiper
                         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                         spaceBetween={40}
@@ -340,10 +343,11 @@ const Landing = () => {
                             1440: {
                                 slidesPerView: 3, // 4 slides per view for screens >= 1440px
                             },
-                        }} autoplay={{
-                            delay: 5000,
-                            disableOnInteraction: false,
                         }}
+                        //  autoplay={{
+                        //     delay: 5000,
+                        //     disableOnInteraction: false,
+                        // }}
                         navigation={{
                             nextEl: ".custom-next",
                             prevEl: ".custom-prev",
@@ -364,14 +368,14 @@ const Landing = () => {
                         </SwiperSlide>
                     </Swiper>
 
-                    <div className="flex gap-[30px] lg:gap-[60px] lg:mt-[10px] justify-center items-center">
+                    {/* <div className="flex gap-[30px] lg:gap-[60px] lg:mt-[10px] justify-center items-center">
                         <div className="custom-next">
                             <img src={leftNav} alt="" className='w-[30px] lg:w-auto' />
                         </div>
                         <div className="custom-prev">
                             <img src={rightNav} alt="" className='w-[30px] lg:w-auto' />
                         </div>
-                    </div>
+                    </div> */}
                 </motion.div>
             </div>
 
@@ -416,7 +420,7 @@ const Landing = () => {
                 }}
                 transition={{ duration: 0.5 }} src={babe} className='hidden lg:block lg:w-[30%]' alt="" />
             <div className='flex justify-center items-center text-accent my-[10px] lg:hidden'>
-                <button className='bg-primary rounded-[5px] px-[14px] lg:px-[62px] py-[7px] lg:py-[22px] text-[16px] lg:text-[25px] font-[600]'>Order Now</button>
+                <button className='relative z-[100000] hero bg-primary rounded-[5px] px-[14px] lg:px-[62px] py-[7px] lg:py-[22px] text-[16px] lg:text-[25px] font-[600]'>Order Now</button>
             </div>
             <motion.img ref={ref22}
                 initial={{ opacity: 0, x: -100 }}
@@ -474,7 +478,7 @@ const Landing = () => {
                 <p className='text-center lg:w-[50%] text-[14px] lg:text-[25px] font-[500] lg:leading-[37px] text-white pt-[15px] lg:pt-[50px]'>At Suya Mix Bistro, we specialize in catering that brings the rich flavors of West Africa to your gatherings. Whether it&apos;s a wedding, corporate event, or a family celebration, our team is ready to deliver an unforgettable culinary experience.</p>
 
                 <div className='flex justify-center items-center text-primary lg:mt-[50px] lg:mb-[30px] mt-[20px] mb-[20px]'>
-                    <button className='bg-accent rounded-[5px] px-[14px] lg:px-[62px] py-[7px] lg:py-[22px] text-[16px] lg:text-[25px] font-[600]'>View More</button>
+                    <button className='relative z-[100000] hero bg-accent rounded-[5px] px-[14px] lg:px-[62px] py-[7px] lg:py-[22px] text-[16px] lg:text-[25px] font-[600]'>View More</button>
                 </div>
             </motion.div>
         </div>
@@ -516,7 +520,7 @@ const Landing = () => {
                     <p className='pt-[10px] lg:pt-[30px] text-center lg:text-left text-[14px] lg:text-[18px] font-[500] lg:leading-[28px] text-white'>Experience the rich, smoky flavors of our suya, now available for shipping across the USA. No matter where you are, you can indulge in our authentic dishes and bring a taste of Nigeria to your home.</p>
 
                     <div className='flex justify-center w-full items-center text-primary lg:mt-[50px] mt-[10px] lg:mb-[30px]'>
-                        <button className='bg-accent rounded-[5px] px-[15px] lg:px-[62px] lg:py-[20px] py-[7px] lg:text-[25px] font-[600]'>View More</button>
+                        <button className='relative z-[100000] hero bg-accent rounded-[5px] px-[15px] lg:px-[62px] lg:py-[20px] py-[7px] lg:text-[25px] font-[600]'>View More</button>
                     </div>
                 </motion.div>
             </div>

@@ -32,7 +32,7 @@
 }
 
 .hero {
-  background-color: #8D2D2D; 
+  /* background-color: #8D2D2D;  */
   background-image:url("./assets/noise.svg");
   background-repeat: repeat;
   /* background-size: cover; */
