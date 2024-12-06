@@ -16,9 +16,9 @@ const Footer = () => {
         <img src={footer} alt="" className='w-full sm:w-[110%]' />
         <div className=' pt-[30px] flex flex-col items-center gap-[24px]'>
             <div className='flex justify-center items-center px-[20px] sm:px-[0] gap-[50px] text-[25px] font-[600]'>
-                <Link onClick={handleClick} to={'/menu'} className='text-[20px] sm:text-[30px]'>Menu</Link>
-                <Link onClick={handleClick} to={'/.'} className='text-[20px] sm:text-[30px]'>Our Story</Link>
-                <Link onClick={handleClick} to={'/catering'} className='text-[20px] sm:text-[30px]'>Catering</Link>
+                <Link onClick={handleClick} to={'/menu'} className='relative z-[10000] text-[20px] sm:text-[30px]'>Menu</Link>
+                <Link onClick={handleClick} to={'/.'} className='relative z-[10000] text-[20px] sm:text-[30px]'>Our Story</Link>
+                <Link onClick={handleClick} to={'/catering'} className='relative z-[10000] text-[20px] sm:text-[30px]'>Catering</Link>
             </div>
 
             <div className='flex justify-center items-center'>

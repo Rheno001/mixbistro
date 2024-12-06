@@ -72,7 +72,7 @@ const Menu = () => {
           duration: 2.5
         }}
       />
-      <section className="hero-section  bg-primary py-[20px] sm:py-[70px] px-[10%] lg:px-[80px] gap-[28px]">
+      <section className="hero-section bg-primary py-[20px] sm:py-[70px] px-[10%] lg:px-[80px] gap-[28px]">
         <motion.div
           ref={ref1}
           initial={{ opacity: 0, y: -100 }}
@@ -138,7 +138,7 @@ const Menu = () => {
         </div>
       </section>
 
-      <section className="hero-section hero bg-primary py-[20px] sm:py-[70px] px-[5%] sm:px-[10%] lg:px-[80px] gap-[28px]">
+      <section className="hero-section bg-primary py-[20px] sm:py-[70px] px-[10%] lg:px-[80px] gap-[28px]">
         <motion.div
           ref={ref2}
           initial={{ opacity: 0, y: -200 }}
@@ -204,7 +204,7 @@ const Menu = () => {
         </div>
 
       </section>
-      <section className="hero-section hero bg-primary py-[20px] sm:py-[70px] px-[5%] sm:px-[10%] lg:px-[80px] gap-[28px]">
+      <section className="hero-section bg-primary py-[20px] sm:py-[70px] px-[10%] lg:px-[80px] gap-[28px]">
         <motion.div
           ref={ref3}
           initial={{ opacity: 0, y: -200 }}
@@ -270,7 +270,7 @@ const Menu = () => {
         </div>
 
       </section>
-      <section className="hero-section hero bg-primary py-[20px] sm:py-[70px] px-[5%] sm:px-[10%] lg:px-[80px] gap-[28px]">
+      <section className="hero-section bg-primary py-[20px] sm:py-[70px] px-[10%] lg:px-[80px] gap-[28px]">
         <motion.div
           ref={ref4}
           initial={{ opacity: 0, y: -200 }}
