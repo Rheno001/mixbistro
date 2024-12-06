@@ -16,7 +16,6 @@ const Footer = () => {
     };
 
     return (<div className="bg-secondary relative pb-[70px] text-orange">
-<<<<<<< HEAD
         {/* <img src={noise} className='absolute z-[100000] w-screen bg-repeat object-cover h-full' alt="" /> */}
         <img src={footer} alt="" className='w-full sm:w-[110%]' />
         <div className=' pt-[30px] flex flex-col items-center gap-[24px]'>
@@ -24,16 +23,6 @@ const Footer = () => {
                 <Link onClick={handleClick} to={'/menu'} className='relative z-[10000] text-[20px] sm:text-[30px]'>Menu</Link>
                 <Link onClick={handleClick} to={'/.'} className='relative z-[10000] text-[20px] sm:text-[30px]'>Our Story</Link>
                 <Link onClick={handleClick} to={'/catering'} className='relative z-[10000] text-[20px] sm:text-[30px]'>Catering</Link>
-=======
-        {/* <div className='absolute bg-[#A5513D]  z-[0] w-full object-cover h-full' alt="" /> */}
-        <img src={footer} alt="" className='relative hidden lg:block z-[10] w-full sm:w-[110%]' />
-        <img src={footerBg} alt="" className='relative lg:hidden z-[10] w-full sm:w-[110%]' />
-        <div className='relative z-[10] pt-[10px] lg:pt-[76px] flex flex-col items-center gap-[24px]'>
-            <div className='flex justify-center items-center px-[20px] sm:px-[0] gap-[30px] lg:gap-[50px] text-[25px] font-[600]'>
-                <Link onClick={handleClick} to={'/menu'} className='text-[14px] lg:text-[20px] text-accent lg:text-orange sm:text-[30px]'>Menu</Link>
-                <Link onClick={handleClick} to={'/.'} className='text-[14px] lg:text-[20px] text-accent lg:text-orange sm:text-[30px]'>Our Story</Link>
-                <Link onClick={handleClick} to={'/catering'} className='text-[14px] lg:text-[20px] text-accent lg:text-orange sm:text-[30px]'>Catering</Link>
->>>>>>> fd5e025a1532a0c1270c12cedc504b38c40106b4
             </div>
 
             <div className='hidden lg:flex justify-center items-center'>
