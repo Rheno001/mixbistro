@@ -332,27 +332,31 @@ const Landing = () => {
                     <Swiper
                         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                         spaceBetween={40}
-                        slidesPerView={1} // Default value for smaller screens
+                        slidesPerView={1} 
                         breakpoints={{
                             640: {
-                                slidesPerView: 2, // 2 slides per view for screens >= 640px
+                                slidesPerView: 2,
                             },
                             1024: {
-                                slidesPerView: 3, // 3 slides per view for screens >= 1024px
+                                slidesPerView: 3,
                             },
                             1440: {
-                                slidesPerView: 3, // 4 slides per view for screens >= 1440px
+                                slidesPerView: 3,
                             },
                         }}
-                        //  autoplay={{
-                        //     delay: 5000,
-                        //     disableOnInteraction: false,
-                        // }}
+
                         navigation={{
                             nextEl: ".custom-next",
                             prevEl: ".custom-prev",
                         }}
-                        className='flex justify-center items-center w-[100%] min-[1824px]:w-[80%]'
+                        pagination={{
+                            el: ".custom-pagination", // Specify a custom pagination class
+                            clickable: true,          // Make the dots clickable
+                            renderBullet: (index, className) => {
+                                // Customize how the bullets are rendered
+                                return `<span class="${className} custom-bullet"></span>`;
+                            },
+                        }}                        className='flex justify-center items-center w-[100%] min-[1824px]:w-[80%]'
                     >
                         <SwiperSlide>
                             <OrderCard img={order1} head={'BOSS! Beef Suya'} desc={'Mild / Spicy Grilled beef garnished with onion & cucumber.'} amt={'$35.00'} />
@@ -367,6 +371,9 @@ const Landing = () => {
                             <OrderCard img={order1} head={'BOSS! Beef Suya'} desc={'Mild / Spicy Grilled beef garnished with onion & cucumber.'} amt={'$35.00'} />
                         </SwiperSlide>
                     </Swiper>
+
+                    <div className="custom-pagination"></div>
+
 
                     {/* <div className="flex gap-[30px] lg:gap-[60px] lg:mt-[10px] justify-center items-center">
                         <div className="custom-next">
