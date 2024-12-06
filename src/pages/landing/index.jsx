@@ -20,9 +20,9 @@ import Slider from '../../components/Slider'
 import Card from '../../components/Card'
 import shipping from './../../assets/shipping.png'
 import sh0pMob from './../../assets/shopMob.png'
-import card1 from './../../assets/card1.png'
-import card2 from './../../assets/card2.png'
-import card3 from './../../assets/card3.png'
+import firstflat from './../../assets/firstflat.png'
+import midflat from './../../assets/midflat.png'
+import lastflat from './../../assets/lastflat.png'
 import food from './../../assets/food.png'
 import foodMob from './../../assets/foodMob.png'
 import baki from './../../assets/blackvector.png'
@@ -273,9 +273,9 @@ const Landing = () => {
                         y: inView7 ? 0 : 100,
                     }}
                     transition={{ duration: 0.5 }} className='flex justify-center items-center gap-[24px] pb-[70px] flex-col lg:flex-row'>
-                    <Card img={card1} heading={'Explore Our Diverse Suya Flavor Selection'} para={'From spicy to savory, our suya flavors cater to every palate.'} />
-                    <Card img={card2} heading={'Rooted in Heritage and Culinary Tradition'} para={'Each dish tells a story of our rich cultural heritage.'} />
-                    <Card img={card3} heading={'Catering Services for Your Special Events'} para={'Let us bring the flavors of Nigeria to your next gathering.'} />
+                    <Card img={firstflat} heading={'Explore Our Diverse Suya Flavor Selection'} para={'From spicy to savory, our suya flavors cater to every palate.'} />
+                    <Card img={midflat} heading={'Rooted in Heritage and Culinary Tradition'} para={'Each dish tells a story of our rich cultural heritage.'} />
+                    <Card img={lastflat} heading={'Catering Services for Your Special Events'} para={'Let us bring the flavors of Nigeria to your next gathering.'} />
                 </motion.div>
             </div>
 
@@ -395,7 +395,7 @@ const Landing = () => {
                     }}
                     transition={{ duration: 0.5 }} className='flex flex-col items-center'>
                     <h1 className='text-center text-[20px] lg:text-[70px] font-[600] text-accent lg:leading-[84px] mb-[5px] lg:mb-[10px] capitalize'>we serve healthy meals</h1>
-                    <img src={line} alt="" className='w-[50px] lg:w-auto' />
+                    <img src={line} alt="" className='w-[100px] lg:w-auto' />
                 </motion.div>
                 <motion.div ref={ref13}
                     initial={{ opacity: 0, y: 100 }}
