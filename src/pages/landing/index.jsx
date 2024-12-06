@@ -23,8 +23,8 @@ import sh0pMob from './../../assets/shopMob.png'
 import firstflat from './../../assets/firstflat.png'
 import midflat from './../../assets/midflat.png'
 import lastflat from './../../assets/lastflat.png'
-import food from './../../assets/food.png'
-import foodMob from './../../assets/foodMob.png'
+import food from './../../assets/foodd.png'
+// import foodMob from './../../assets/foodMob.png'
 import baki from './../../assets/blackvector.png'
 import babe from './../../assets/Frame 255.png'
 import babeMob from './../../assets/enjoyMob.png'
@@ -130,10 +130,10 @@ const Landing = () => {
         triggerOnce: false,
         threshold: 0.5,
     });
-    const { ref: ref21, inView: inView21 } = useInView({
-        triggerOnce: false,
-        threshold: 0.5,
-    });
+    // const { ref: ref21, inView: inView21 } = useInView({
+    //     triggerOnce: false,
+    //     threshold: 0.5,
+    // });
     const { ref: ref22, inView: inView22 } = useInView({
         triggerOnce: false,
         threshold: 0.5,
@@ -386,6 +386,8 @@ const Landing = () => {
                 </motion.div>
             </div>
 
+        </div>
+
             <div className='pt-[20px] lg:pt-[70px]'>
                 <motion.div ref={ref12}
                     initial={{ opacity: 0, y: -200 }}
@@ -403,20 +405,23 @@ const Landing = () => {
                         opacity: inView13 ? 1 : 0,
                         y: inView13 ? 0 : 100,
                     }}
-                    transition={{ duration: 0.5 }} className='hidden lg:flex justify-center items-center mt-[80px] pb-[70px]'>
-                    <img src={food} alt="" className='lg:w-[80%]' />
-                </motion.div>
-                <motion.div ref={ref21}
-                    initial={{ opacity: 0, y: 100 }}
-                    animate={{
-                        opacity: inView21 ? 1 : 0,
-                        y: inView21 ? 0 : 100,
-                    }}
-                    transition={{ duration: 0.5 }} className='flex lg:hidden justify-center items-center mt-[20px] lg:mt-[80px] pb-[20px] lg:pb-[70px]'>
-                    <img src={foodMob} alt="" className='w-full' />
+                    transition={{ duration: 0.5 }} className='flex justify-center items-center relative mt-[20px] lg:mt-[80px] pb-[140px] lg:pb-[70px]'>
+                        <div className='absolute z-10 w-[30%] lg:w-[20%] top-[20%] lg:top-[35%] left-[5%]'>
+                        <h1 className='text-[10px] lg:text-[30px] text-accent font-[600] pb-[5px] lg:pb-[10px]'>Low in Carbs</h1>
+                        <p className='font-[500] text-[8px] lg:text-[18px] text-white'>Suya, when consumed without heavy starch-based sides, is naturally low in carbohydrates, making it suitable for low-carb or keto diets.</p>
+                        </div>
+                        <div className='absolute z-10 w-[30%] lg:w-[23%] top-[20%] lg:top-[35%] right-[5%]'>
+                        <h1 className='text-[10px] lg:text-[30px] text-accent font-[600] pb-[5px] lg:pb-[10px]'>High Protein Content</h1>
+                        <p className='font-[500] text-[8px] lg:text-[18px] text-white'>Suya is primarily made from lean meats, which are excellent sources of protein essential for muscle repair and overall body function.</p>
+                        </div>
+                    <div className='absolute z-10 w-[50%] lg:w-[40%] bottom-[15%] lg:bottom-10'>
+                        <h1 className='text-[10px] lg:text-[30px] text-accent font-[600] pb-[5px] lg:pb-[10px] text-center lg:text-left'>Rich in Spices</h1>
+                        <p className='font-[500] text-[8px] lg:text-[18px] text-white'>Suya spice (yaji) typically includes ingredients like ginger, garlic, cayenne pepper, and groundnut powder. <br />
+                            These spices have potential health benefits, such as boosting metabolism, reducing inflammation, and enhancing immunity.</p>
+                    </div>
+                    <img src={food} alt="" className='w-[65%] lg:w-[80%]' />
                 </motion.div>
             </div>
-        </div>
 
         <div className='flex justify-between flex-col-reverse lg:flex-row items-center py-[20px] lg:py-[70px] px-[5%] bg-accent'>
             <motion.img ref={ref14}
