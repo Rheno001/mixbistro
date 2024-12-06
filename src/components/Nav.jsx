@@ -11,15 +11,15 @@ const Nav = () => {
 
     return (
         <div className={`bg-${isOpen ? 'primary' : 'secondary'} w-full relative z-[10000]`}>
-            <div className="px-4 lg:px-[80px] hero relative py-[30px] text-accent font-[600] text-[25px] flex flex-row-reverse lg:flex-row justify-between items-center z-[100000]">
+            <div className="px-4 lg:px-[80px] hero relative py-[10px] lg:py-[30px] text-accent font-[600] text-[25px] flex flex-row-reverse lg:flex-row justify-between items-center z-[100000]">
                 {/* Hamburger Menu Button - Only visible on mobile/tablet */}
                 <button
                     onClick={() => setIsOpen(!isOpen)}
-                    className="lg:hidden flex flex-col gap-1.5"
+                    className="lg:hidden flex flex-col gap-[5px]"
                 >
-                    <span className={`block h-0.5 w-6 bg-accent transition-transform duration-300 ${isOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
-                    <span className={`block h-0.5 w-6 bg-accent transition-opacity duration-300 ${isOpen ? 'opacity-0' : ''}`}></span>
-                    <span className={`block h-0.5 w-6 bg-accent transition-transform duration-300 ${isOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
+                    <span className={`block h-1 rounded-sm w-8 bg-accent transition-transform duration-300 ${isOpen ? 'rotate-45 translate-y-[8.5px]' : ''}`}></span>
+                    <span className={`block h-1 rounded-sm w-8 bg-accent transition-opacity duration-300 ${isOpen ? 'opacity-0' : ''}`}></span>
+                    <span className={`block h-1 rounded-sm w-8 bg-accent transition-transform duration-300 ${isOpen ? '-rotate-45 -translate-y-[8.5px]' : ''}`}></span>
                 </button>
                 {/* Desktop Navigation */}
                 <Link onClick={handleClick} className='hidden lg:flex w-[33%] justify-start items-start' to={'/menu'}>
@@ -36,17 +36,17 @@ const Nav = () => {
 
             {/* Mobile Menu - Slides down when hamburger is clicked */}
             <div
-                className={`lg:hidden absolute w-full flex items-start px-[20px] pr-[50px] overflow-hidden bg-accent z-[10000] transition-all duration-300 ease-in-out ${isOpen ? 'h-screen z-[1000] opacity-100' : 'h-screen opacity-0 z-[1000] overflow-hidden'
+                className={`lg:hidden absolute w-full flex items-start px-[20px] bg-accent transition-all duration-300 ease-in-out ${isOpen ? 'h-auto opacity-100' : 'h-auto opacity-0 overflow-hidden'
                     }`}
             >
-                <div className="flex flex-col items-start gap-6 py-6">
+                <div className="flex flex-col w-[100%] items-start gap-6 py-6">
                     <Link
                         to={'/menu'}
                         onClick={() => {
                             handleClick()
                             setIsOpen(false)
                         }}
-                        className="text-primary py-2 font-semibold w-screen hover:opacity-80 transition-opacity border-b-4 border-dashed border-primary"
+                        className="text-primary py-2 font-semibold w-[100%] hover:opacity-80 transition-opacity border-b-4 border-dashed border-primary"
                     >
                         Menu
                     </Link>
@@ -56,7 +56,7 @@ const Nav = () => {
                             handleClick
                             setIsOpen(false)
                         }}
-                        className="text-primary py-2 font-semibold w-screen hover:opacity-80 transition-opacity border-b-4 border-dashed border-primary"
+                        className="text-primary py-2 font-semibold w-[100%] hover:opacity-80 transition-opacity border-b-4 border-dashed border-primary"
                     >
                         Our Story
                     </Link>

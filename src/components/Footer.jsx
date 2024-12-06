@@ -35,12 +35,12 @@ const Footer = () => {
             <div className='hidden lg:flex justify-center items-center pt-[5px]'>
                 <img src={insta} alt="" className='mx-[5px] w-[30px] sm:w-full' />
                 <img src={fb} alt="" className='mx-[5px] w-[30px] sm:w-full' />
-                <img src={tik} alt="" className='mx-[5px] w-[30px] sm:w-full'/>
+                <img src={tik} alt="" className='mx-[5px] w-[30px] sm:w-full' />
             </div>
             <div className='flex lg:hidden justify-center items-center pt-[5px]'>
                 <img src={instaMob} alt="" className='mx-[5px] w-[30px] sm:w-full' />
                 <img src={fbMob} alt="" className='mx-[5px] w-[30px] sm:w-full' />
-                <img src={tikMob} alt="" className='mx-[5px] w-[30px] sm:w-full'/>
+                <img src={tikMob} alt="" className='mx-[5px] w-[30px] sm:w-full' />
             </div>
         </div>
     </div>);
