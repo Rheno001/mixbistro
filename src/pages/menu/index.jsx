@@ -92,7 +92,7 @@ const Menu = () => {
             ref={ref8}
             src={frame120}
             alt="Frame 120"
-            className='w-[300px] sm:w-[60%] h-[300px] sm:h-[60%]'
+            className='w-[100%] sm:w-[60%] h-[100%] sm:h-[60%]'
             initial={{ x: 1, opacity: 0 }}
             animate={{
               x: inView8 ? 0 : -100,
@@ -138,7 +138,7 @@ const Menu = () => {
         </div>
       </section>
 
-      <section className="hero-section py-[70px]  px-[10%] lg:px-[80px] gap-[28px]">
+      <section className="hero-section hero bg-primary py-[20px] sm:py-[70px] px-[5%] sm:px-[10%] lg:px-[80px] gap-[28px]">
         <motion.div
           ref={ref2}
           initial={{ opacity: 0, y: -200 }}
@@ -149,7 +149,7 @@ const Menu = () => {
           transition={{ duration: 0.5 }}
           className='flex justify-center items-center px-50px sm:px-[74px]'>
           <div className='relative flex flex-col mt-[80px] sm:mt-[5px] items-center'>
-            <p className='text-accent font-[600] text-[40px] sm:text-[70px] leading-[60px] font-mont text-center'>Groovy Green Salad</p>
+            <p className='text-accent font-[600] text-[30px] sm:text-[70px] leading-[60px] font-mont text-center'>Groovy Green Salad</p>
             <img src={vector} alt="Decorative Vector" className="vector-image w-[250px] sm:mt-4" />
           </div>
         </motion.div>
@@ -158,7 +158,7 @@ const Menu = () => {
             ref={ref5}
             src={des1}
             alt="Frame 120"
-            className='w-[300px] sm:w-[60%] h-[300px] sm:h-[60%]'
+            className='w-[100%] sm:w-[60%] h-[100%] sm:h-[60%]'
             initial={{ x: -100, opacity: 0 }}
             animate={{
               x: inView5 ? 0 : -100,
@@ -204,7 +204,7 @@ const Menu = () => {
         </div>
 
       </section>
-      <section className="hero-section py-[70px]  px-[10%] lg:px-[80px] gap-[28px]">
+      <section className="hero-section hero bg-primary py-[20px] sm:py-[70px] px-[5%] sm:px-[10%] lg:px-[80px] gap-[28px]">
         <motion.div
           ref={ref3}
           initial={{ opacity: 0, y: -200 }}
@@ -224,7 +224,7 @@ const Menu = () => {
             ref={ref6}
             src={des2}
             alt="Frame 120"
-            className='w-[300px] sm:w-[60%] h-[300px] sm:h-[60%]'
+            className='w-[100%] sm:w-[60%] h-[100%] sm:h-[60%]'
             initial={{ x: -100, opacity: 0 }}
             animate={{
               x: inView6 ? 0 : -100,
@@ -270,8 +270,7 @@ const Menu = () => {
         </div>
 
       </section>
-
-      <section className="hero-section py-[70px]  px-[10%] lg:px-[80px] gap-[28px]">
+      <section className="hero-section hero bg-primary py-[20px] sm:py-[70px] px-[5%] sm:px-[10%] lg:px-[80px] gap-[28px]">
         <motion.div
           ref={ref4}
           initial={{ opacity: 0, y: -200 }}
@@ -291,7 +290,7 @@ const Menu = () => {
             ref={ref7}
             src={des2}
             alt="Frame 120"
-            className='w-[300px] sm:w-[60%] h-[300px] sm:h-[60%]'
+            className='w-[100%] sm:w-[60%] h-[100%] sm:h-[60%]'
             initial={{ x: -100, opacity: 0 }}
             animate={{
               x: inView7 ? 0 : -100,

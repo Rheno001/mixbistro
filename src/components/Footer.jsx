@@ -14,7 +14,7 @@ const Footer = () => {
     return (<div className="bg-secondary relative pb-[70px] text-orange">
         {/* <img src={noise} className='absolute z-[100000] w-screen bg-repeat object-cover h-full' alt="" /> */}
         <img src={footer} alt="" className='w-full sm:w-[110%]' />
-        <div className=' pt-[76px] flex flex-col items-center gap-[24px]'>
+        <div className=' pt-[30px] flex flex-col items-center gap-[24px]'>
             <div className='flex justify-center items-center px-[20px] sm:px-[0] gap-[50px] text-[25px] font-[600]'>
                 <Link onClick={handleClick} to={'/menu'} className='text-[20px] sm:text-[30px]'>Menu</Link>
                 <Link onClick={handleClick} to={'/.'} className='text-[20px] sm:text-[30px]'>Our Story</Link>
@@ -25,7 +25,7 @@ const Footer = () => {
                 <img src={line} alt="" />
             </div>
 
-            <p className='text-center text-[15px] sm:text-[20px] capitalize'>follow us on social media for latest updates</p>
+            <p className='text-center text-[15px] sm:text-[20px] capitalize text-white'>follow us on social media for latest updates</p>
 
             <div className='flex justify-center items-center pt-[5px]'>
                 <img src={insta} alt="" className='mx-[5px] w-[30px] sm:w-full' />
