@@ -235,7 +235,7 @@ const Landing = () => {
             </motion.div>
 
             <div className='flex justify-center items-center text-primary mt-[50px] mb-[30px]'>
-                <button className='relative z-[100000] hero bg-accent rounded-[5px] px-[14px] lg:px-[62px] py-[7px] lg:py-[22px] text-[16px] lg:text-[25px] font-[600]'>Order Now</button>
+                <button className='relative z-[100000] hero bg-accent rounded-[5px] px-[14px] lg:px-[62px] py-[5px] lg:py-[22px] text-[16px] lg:text-[25px] font-[600]'>Order Now</button>
             </div>
         </div>
         <div className='lg:pt-[70px]'>
@@ -490,7 +490,7 @@ const Landing = () => {
                 <p className='text-center lg:w-[50%] text-[14px] lg:text-[25px] font-[500] lg:leading-[37px] text-white pt-[15px] lg:pt-[50px]'>At Suya Mix Bistro, we specialize in catering that brings the rich flavors of West Africa to your gatherings. Whether it&apos;s a wedding, corporate event, or a family celebration, our team is ready to deliver an unforgettable culinary experience.</p>
 
                 <div className='flex justify-center items-center text-primary lg:mt-[50px] lg:mb-[30px] mt-[20px] mb-[20px]'>
-                    <button className='relative z-[100000] hero bg-accent rounded-[5px] px-[14px] lg:px-[62px] py-[7px] lg:py-[22px] text-[16px] lg:text-[25px] font-[600]'>View More</button>
+                    <button className='relative z-[100000] hero bg-accent rounded-[5px] px-[14px] lg:px-[62px] py-[5px] lg:py-[22px] text-[16px] lg:text-[25px] font-[600]'>View More</button>
                 </div>
             </motion.div>
         </div>
@@ -532,7 +532,7 @@ const Landing = () => {
                     <p className='pt-[10px] lg:pt-[30px] text-center lg:text-left text-[14px] lg:text-[18px] font-[500] lg:leading-[28px] text-white'>Experience the rich, smoky flavors of our suya, now available for shipping across the USA. No matter where you are, you can indulge in our authentic dishes and bring a taste of Nigeria to your home.</p>
 
                     <div className='flex justify-center w-full items-center text-primary lg:mt-[50px] mt-[10px] lg:mb-[30px]'>
-                        <button className='relative z-[100000] hero bg-accent rounded-[5px] px-[15px] lg:px-[62px] lg:py-[20px] py-[7px] lg:text-[25px] font-[600]'>View More</button>
+                        <button className='relative z-[100000] hero bg-accent rounded-[5px] px-[15px] lg:px-[62px] lg:py-[20px] py-[5px] lg:text-[25px] font-[600]'>View More</button>
                     </div>
                 </motion.div>
             </div>
