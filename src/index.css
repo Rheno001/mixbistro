@@ -57,6 +57,14 @@
   /* background-blend-mode: overlay; */
 }
 
+.cardBg {
+  background-image:url("./assets/cardBg.png");
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-position: center;
+  /* background-blend-mode: overlay; */
+}
+
 .clip-path-ellipse {
   clip-path: ellipse(50% 40% at 50% 50%);
 }
