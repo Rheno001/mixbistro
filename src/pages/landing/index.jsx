@@ -263,7 +263,7 @@ const Landing = () => {
             </motion.div>
         </div>
 
-            <div className='pt-[20px] cardBg lg:pt-[70px]'>
+            <div className='pt-[20px] px-[20px] cardBg lg:pt-[70px]'>
                 <h1 className='text-center text-accent text-[20px] lg:text-[40px] font-[600] pb-[10px] lg:pb-[20px]'>At Suya Mix Bistro</h1>
                 <p className='text-center text-[14px] lg:text-[25px] font-[500] lg:leading-[38px] text-white pb-[15px] lg:pb-[30px]'>We bring the vibrant flavors of West Africa to your plate.  <br className='hidden lg:block' /> Our authentic suya is crafted with traditional spices and techniques, ensuring every bite is a celebration of culture.</p>
 
