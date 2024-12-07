@@ -276,7 +276,7 @@ const Landing = () => {
                     transition={{ duration: 0.5 }} className='flex justify-center items-center gap-[24px] pb-[70px] flex-col lg:flex-row'>
                     <Card img={firstflat} heading={'Explore Our Diverse Suya Flavor Selection'} para={'From spicy to savory, our suya flavors cater to every palate.'} />
                     <Card img={midflat} heading={'Rooted in Heritage and Culinary Tradition'} para={'Each dish tells a story of our rich cultural heritage.'} />
-                    <Card img={lastflat} heading={'Catering Services for Your Special Events'} para={'Let us bring the flavors of Nigeria to your next gathering.'} />
+                    <Card img={firstflat} heading={'Catering Services for Your Special Events'} para={'Let us bring the flavors of Nigeria to your next gathering.'} />
                 </motion.div>
             </div>
 
