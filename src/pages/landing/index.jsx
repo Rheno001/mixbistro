@@ -235,7 +235,7 @@ const Landing = () => {
             </motion.div>
 
             <div className='flex justify-center items-center text-primary mt-[50px] mb-[30px]'>
-                <button className='relative z-[100000] hero bg-accent rounded-[5px] px-[14px] lg:px-[62px] py-[5px] lg:py-[22px] text-[16px] lg:text-[25px] font-[600]'>Order Now</button>
+                <button className='relative z-[100000] hero bg-accent rounded-[5px] px-[40px] border-primary border-[2px] lg:px-[62px] py-[10px] lg:py-[22px] text-[16px] lg:text-[25px] font-[600]'>Order Now</button>
             </div>
         </div>
         <div className='lg:pt-[70px]'>
@@ -261,8 +261,9 @@ const Landing = () => {
                 transition={{ duration: 0.5 }} className='flex justify-center items-center'>
                 <img src={gal} alt="" />
             </motion.div>
+        </div>
 
-            <div className='pt-[20px] lg:pt-[70px]'>
+            <div className='pt-[20px] cardBg lg:pt-[70px]'>
                 <h1 className='text-center text-accent text-[20px] lg:text-[40px] font-[600] pb-[10px] lg:pb-[20px]'>At Suya Mix Bistro</h1>
                 <p className='text-center text-[14px] lg:text-[25px] font-[500] lg:leading-[38px] text-white pb-[15px] lg:pb-[30px]'>We bring the vibrant flavors of West Africa to your plate.  <br className='hidden lg:block' /> Our authentic suya is crafted with traditional spices and techniques, ensuring every bite is a celebration of culture.</p>
 
@@ -279,114 +280,109 @@ const Landing = () => {
                 </motion.div>
             </div>
 
-            <div className='flex flex-col lg:flex-row justify-between items-center mb-[20px] lg:mb-[70px]'>
-                <motion.img ref={ref24}
-                    initial={{ opacity: 0, x: -200 }}
-                    animate={{
-                        opacity: inView24 ? 1 : 0,
-                        x: inView24 ? 0 : -200,
-                    }}
-                    transition={{ duration: 0.5 }} src={about} className='hidden lg:block  lg:w-[60%]' alt="" />
-                <motion.img ref={ref8}
-                    initial={{ opacity: 0, x: -100 }}
-                    animate={{
-                        opacity: inView8 ? 1 : 0,
-                        x: inView8 ? 0 : -100,
-                    }}
-                    transition={{ duration: 0.5 }} src={aboutMob} className='lg:hidden lg:w-[60%]' alt="" />
-                <motion.div ref={ref9}
-                    initial={{ opacity: 0, x: 100 }}
-                    animate={{
-                        opacity: inView9 ? 1 : 0,
-                        x: inView9 ? 0 : 100,
-                    }}
-                    transition={{ duration: 0.5 }} className='lg:-ml-[50px] flex flex-col items-start'>
-                    <div className='flex flex-col items-center'>
-                        <h1 className='text-center text-[20px] lg:text-[70px] font-[600] text-accent lg:leading-[84px]'>About us</h1>
-                        <img src={line} alt="" className='w-[50%] lg:w-[70%] mt-[5px] lg:mt-[10px]' />
-                    </div>
-                    <p className='pt-[15px] lg:pt-[30px] text-[14px] lg:text-[18px] font-[500] lg:leading-[28px] text-center lg:text-left text-white'>In the heart of San Antonio, Texas, a unique culinary adventure awaits—one that transports you to the bustling street corners of Northern Nigeria and the vibrant flavors of West Africa. At Suya Mix Bistro, we don&apos;t just serve meals; we serve a slice of heritage, wrapped in the warm, smoky spices of our traditional suya.</p>
-                    <h2 className='text-accent text-[14px] text-center lg:text-left lg:text-[25px] font-[600] w-full lg:leading-[38px] pt-[15px] lg:pt-[30px]'>Our journey begins with a simple vision:</h2>
-                    <p className='text-[14px] lg:text-[18px] font-[500] text-center lg:text-left lg:leading-[28px] text-white'>to bring a taste like home to Texas. Suya, the beloved street food from West Africa, is much more than skewered meat; it&apos;s a cultural symphony of flavors, perfected by generations of street chefs.</p>
-                </motion.div>
-            </div>
-
-            <div className='py-[20px] lg:py-[70px]'>
-                <motion.div ref={ref10}
-                    initial={{ opacity: 0, y: -200 }}
-                    animate={{
-                        opacity: inView10 ? 1 : 0,
-                        y: inView10 ? 0 : -200,
-                    }}
-                    transition={{ duration: 0.5 }} className='flex flex-col items-center'>
-                    <h1 className='text-center text-[20px] lg:text-[70px] font-[600] text-accent lg:leading-[84px] mb-[5px] lg:mb-[10px] capitalize'>top dishes from our <br /> customer</h1>
-                    <img src={line} alt="" className='w-[50%] lg:w-auto' />
-                </motion.div>
-                <motion.div ref={ref11}
-                    initial={{ opacity: 0, y: 100 }}
-                    animate={{
-                        opacity: inView11 ? 1 : 0,
-                        y: inView11 ? 0 : 100,
-                    }}
-                    transition={{ duration: 0.5 }} className='flex justify-center items-center gap-[40px] mt-[20px] lg:mt-[80px] flex-col  relative z-[1000000]'>
-                    <Swiper
-                        modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-                        spaceBetween={40}
-                        slidesPerView={1} 
-                        breakpoints={{
-                            640: {
-                                slidesPerView: 2,
-                            },
-                            1024: {
-                                slidesPerView: 3,
-                            },
-                            1440: {
-                                slidesPerView: 3,
-                            },
+        <div className='px-[10%] lg:px-[5%] pt-[20px] lg:pt-[70px]'>
+                <div className='flex flex-col lg:flex-row justify-between items-center mb-[20px] lg:mb-[70px]'>
+                    <motion.img ref={ref24}
+                        initial={{ opacity: 0, x: -200 }}
+                        animate={{
+                            opacity: inView24 ? 1 : 0,
+                            x: inView24 ? 0 : -200,
                         }}
-
-                        navigation={{
-                            nextEl: ".custom-next",
-                            prevEl: ".custom-prev",
+                        transition={{ duration: 0.5 }} src={about} className='hidden lg:block  lg:w-[60%]' alt="" />
+                    <motion.img ref={ref8}
+                        initial={{ opacity: 0, x: -100 }}
+                        animate={{
+                            opacity: inView8 ? 1 : 0,
+                            x: inView8 ? 0 : -100,
                         }}
-                        pagination={{
-                            el: ".custom-pagination", // Specify a custom pagination class
-                            clickable: true,          // Make the dots clickable
-                            renderBullet: (index, className) => {
-                                // Customize how the bullets are rendered
-                                return `<span class="${className} custom-bullet"></span>`;
-                            },
-                        }}                        className='flex justify-center items-center w-[100%] min-[1824px]:w-[80%]'
-                    >
-                        <SwiperSlide>
-                            <OrderCard img={order1} head={'BOSS! Beef Suya'} desc={'Mild / Spicy Grilled beef garnished with onion & cucumber.'} amt={'$35.00'} />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <OrderCard img={slide2} head={'Suya Mix Burger'} desc={'Mild / Spicy Grilled beef garnished with onion & cucumber.'} amt={'$12.99'} />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <OrderCard img={slide3} head={'Groovy Green Salad'} desc={'Mild / Spicy Grilled beef garnished with onion & cucumber.'} amt={'$15.00'} />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <OrderCard img={order1} head={'BOSS! Beef Suya'} desc={'Mild / Spicy Grilled beef garnished with onion & cucumber.'} amt={'$35.00'} />
-                        </SwiperSlide>
-                    </Swiper>
-
-                    <div className="custom-pagination"></div>
-
-
-                    {/* <div className="flex gap-[30px] lg:gap-[60px] lg:mt-[10px] justify-center items-center">
-                        <div className="custom-next">
-                            <img src={leftNav} alt="" className='w-[30px] lg:w-auto' />
+                        transition={{ duration: 0.5 }} src={aboutMob} className='lg:hidden lg:w-[60%]' alt="" />
+                    <motion.div ref={ref9}
+                        initial={{ opacity: 0, x: 100 }}
+                        animate={{
+                            opacity: inView9 ? 1 : 0,
+                            x: inView9 ? 0 : 100,
+                        }}
+                        transition={{ duration: 0.5 }} className='lg:-ml-[50px] flex flex-col items-start'>
+                        <div className='flex flex-col items-center'>
+                            <h1 className='text-center text-[20px] lg:text-[70px] font-[600] text-accent lg:leading-[84px]'>About us</h1>
+                            <img src={line} alt="" className='w-[50%] lg:w-[70%] mt-[5px] lg:mt-[10px]' />
                         </div>
-                        <div className="custom-prev">
-                            <img src={rightNav} alt="" className='w-[30px] lg:w-auto' />
-                        </div>
-                    </div> */}
-                </motion.div>
+                        <p className='pt-[15px] lg:pt-[30px] text-[14px] lg:text-[18px] font-[500] lg:leading-[28px] text-center lg:text-left text-white'>In the heart of San Antonio, Texas, a unique culinary adventure awaits—one that transports you to the bustling street corners of Northern Nigeria and the vibrant flavors of West Africa. At Suya Mix Bistro, we don&apos;t just serve meals; we serve a slice of heritage, wrapped in the warm, smoky spices of our traditional suya.</p>
+                        <h2 className='text-accent text-[14px] text-center lg:text-left lg:text-[25px] font-[600] w-full lg:leading-[38px] pt-[15px] lg:pt-[30px]'>Our journey begins with a simple vision:</h2>
+                        <p className='text-[14px] lg:text-[18px] font-[500] text-center lg:text-left lg:leading-[28px] text-white'>to bring a taste like home to Texas. Suya, the beloved street food from West Africa, is much more than skewered meat; it&apos;s a cultural symphony of flavors, perfected by generations of street chefs.</p>
+                    </motion.div>
+                </div>
+                <div className='py-[20px] lg:py-[70px]'>
+                    <motion.div ref={ref10}
+                        initial={{ opacity: 0, y: -200 }}
+                        animate={{
+                            opacity: inView10 ? 1 : 0,
+                            y: inView10 ? 0 : -200,
+                        }}
+                        transition={{ duration: 0.5 }} className='flex flex-col items-center'>
+                        <h1 className='text-center text-[20px] lg:text-[70px] font-[600] text-accent lg:leading-[84px] mb-[5px] lg:mb-[10px] capitalize'>top dishes from our <br /> customer</h1>
+                        <img src={line} alt="" className='w-[50%] lg:w-auto' />
+                    </motion.div>
+                    <motion.div ref={ref11}
+                        initial={{ opacity: 0, y: 100 }}
+                        animate={{
+                            opacity: inView11 ? 1 : 0,
+                            y: inView11 ? 0 : 100,
+                        }}
+                        transition={{ duration: 0.5 }} className='flex justify-center items-center gap-[40px] mt-[20px] lg:mt-[80px] flex-col  relative z-[1000000]'>
+                        <Swiper
+                            modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+                            spaceBetween={40}
+                            slidesPerView={1}
+                            breakpoints={{
+                                640: {
+                                    slidesPerView: 2,
+                                },
+                                1024: {
+                                    slidesPerView: 3,
+                                },
+                                1440: {
+                                    slidesPerView: 3,
+                                },
+                            }}
+                            navigation={{
+                                nextEl: ".custom-next",
+                                prevEl: ".custom-prev",
+                            }}
+                            pagination={{
+                                el: ".custom-pagination", // Specify a custom pagination class
+                                clickable: true,          // Make the dots clickable
+                                renderBullet: (index, className) => {
+                                    // Customize how the bullets are rendered
+                                    return `<span class="${className} custom-bullet"></span>`;
+                                },
+                            }}                        className='flex justify-center items-center w-[100%] min-[1824px]:w-[80%]'
+                        >
+                            <SwiperSlide>
+                                <OrderCard img={order1} head={'BOSS! Beef Suya'} desc={'Mild / Spicy Grilled beef garnished with onion & cucumber.'} amt={'$35.00'} />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <OrderCard img={slide2} head={'Suya Mix Burger'} desc={'Mild / Spicy Grilled beef garnished with onion & cucumber.'} amt={'$12.99'} />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <OrderCard img={slide3} head={'Groovy Green Salad'} desc={'Mild / Spicy Grilled beef garnished with onion & cucumber.'} amt={'$15.00'} />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <OrderCard img={order1} head={'BOSS! Beef Suya'} desc={'Mild / Spicy Grilled beef garnished with onion & cucumber.'} amt={'$35.00'} />
+                            </SwiperSlide>
+                        </Swiper>
+                        <div className="custom-pagination"></div>
+                        {/* <div className="flex gap-[30px] lg:gap-[60px] lg:mt-[10px] justify-center items-center">
+                            <div className="custom-next">
+                                <img src={leftNav} alt="" className='w-[30px] lg:w-auto' />
+                            </div>
+                            <div className="custom-prev">
+                                <img src={rightNav} alt="" className='w-[30px] lg:w-auto' />
+                            </div>
+                        </div> */}
+                    </motion.div>
+                </div>
             </div>
-
-        </div>
 
             <div className='pt-[20px] lg:pt-[70px]'>
                 <motion.div ref={ref12}
@@ -451,7 +447,11 @@ const Landing = () => {
                 transition={{ duration: 0.5 }} className='flex flex-col items-center'>
                 <div className='flex flex-col items-center px-[20px]'>
                     <h1 className='text-center text-[20px] lg:text-[70px] font-[600] text-primary lg:leading-[84px]'>Enjoy Our Special <br className='lg:hidden' /> Suya <br className='hidden lg:block' /> Burger</h1>
-                    <img src={baki} alt="" className='w-[70%] mt-[5px] lg:mt-[10px]' />
+                    <img src={baki} alt="" className='w-[70%] lg:w-[60%] mt-[5px] lg:mt-[10px]' />
+
+                    <div className='lg:flex mt-[10%] justify-center items-center text-accent hidden my-[10px]'>
+                        <button className='relative z-[100000] hero bg-primary rounded-[5px] px-[14px] lg:px-[62px] py-[7px] lg:py-[22px] text-[16px] lg:text-[25px] font-[600]'>Order Now</button>
+                    </div>
                 </div>
             </motion.div>
         </div>
