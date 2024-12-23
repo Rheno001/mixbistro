@@ -40,6 +40,14 @@
   /* background-blend-mode: overlay; */
 }
 
+.getStarted {
+  background-image:url("./assets/getStarted.svg");
+  background-repeat: no-repeat;
+    background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
 .foot {
   background-color: #A5513D; 
   background-image:url("./assets/noise.svg");
