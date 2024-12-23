@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion'
 import catering from '../../assets/catering.png'
 import vector from '../../assets/Vector.png'
-import pic1 from '../../assets/pic1.png'
-import pic2 from '../../assets/pic2.png'
-import pic3 from '../../assets/pic3.png'
-import pic4 from '../../assets/pic4.png'
+import ladies from '../../assets/2ladies.png'
+import beefsalad from '../../assets/beefsalad.png'
+import boygirl from '../../assets/boygirl.png'
+import unseen from '../../assets/unseen.png'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useInView } from "react-intersection-observer";
 import {
@@ -19,8 +19,6 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
-// import noise from '../../assets/noise.svg'
-
 
 const Catering = () => {
     const { ref: ref4, inView: inView4 } = useInView({
@@ -34,9 +32,7 @@ const Catering = () => {
 
 
     return (
-        <div className=" bg-primary relative overflow-hidden">
-            {/* <img src={noise} className='absolute z-[100000] w-screen object-cover h-full' alt="" /> */}
-
+        <div className="menu-container bg-primary hero overflow-hidden">
             <motion.img
                 src={catering}
                 alt="Catering Image"
@@ -59,7 +55,7 @@ const Catering = () => {
                         y: inView4 ? 0 : -100,
                     }}
                     transition={{ duration: 0.5 }}
-                    className='flex justify-center items-center px-[10%] lg:px-[74px]'>
+                    className='flex justify-center items-center px-[74px]'>
                     <div className='relative z-[200] flex flex-col items-center mt-[40px] sm:mt-[80px]'>
                         <p className='text-center text-[25px] lg:text-[70px] font-[600] text-accent lg:leading-[84px] mb-[10px]'>Our Catering Services</p>
                         <img src={vector} alt="Decorative Vector" className="vector-image w-[200px] lg:w-[350px] mt-2" />
@@ -74,25 +70,25 @@ const Catering = () => {
                             opacity: inView11 ? 1 : 0,
                             y: inView11 ? 0 : 100,
                         }}
-                        transition={{ duration: 0.5 }} className='flex justify-center items-center mt-[40px] sm:mt-[80px] flex-col z-[10] relative'>
-
+                        transition={{ duration: 0.5 }} className='flex justify-center items-center mt-[40px] sm:mt-[80px] flex-col relative'>
+                        {/* <img src={ellipse} alt="" className='absolute z-[400] w-[100vw] -top-[15%]' /> */}
                         <div
-                            className="w-[99vw] bg-primary h-[40%] absolute z-[400000] -top-[19%] clip-path-ellipse"
+                            className="w-[99vw] hero h-[40%] absolute z-[400] -top-[19%] clip-path-ellipse"
                         >
                         </div>
                         <div
-                            className="w-[99vw] bg-primary h-[40%] absolute z-[400000] -bottom-[19%] clip-path-ellipse"
+                            className="w-[99vw] hero h-[40%] absolute z-[400] -bottom-[19%] clip-path-ellipse"
                         >
                         </div>
                         <Swiper
                             modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                             spaceBetween={20}
                             slidesPerView={2}  // Default for mobile
-                            breakpoints={{
-                                640: {  // sm breakpoint
-                                    slidesPerView: 3
-                                }
-                            }}
+                        breakpoints={{
+                            640: {  // sm breakpoint
+                                slidesPerView: 3
+                            }
+                        }}
                             autoplay={{
                                 delay: 5000,
                                 disableOnInteraction: false,
@@ -104,16 +100,16 @@ const Catering = () => {
                             className='flex justify-center items-center w-[100%] relative'
                         >
                             <SwiperSlide>
-                                <img src={pic1} alt="Decorative Vector" className="slider-image w-full" />
+                                <img src={ladies} alt="Decorative Vector" className="slider-image w-full" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={pic2} alt="Decorative Vector" className="slider-image w-full" />
+                                <img src={beefsalad} alt="Decorative Vector" className="slider-image w-full" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={pic3} alt="Decorative Vector" className="slider-image w-full" />
+                                <img src={boygirl} alt="Decorative Vector" className="slider-image w-full" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={pic4} alt="Decorative Vector" className="slider-image w-full" />
+                                <img src={unseen} alt="Decorative Vector" className="slider-image w-full" />
                             </SwiperSlide>
                         </Swiper>
                     </motion.div>
@@ -123,7 +119,7 @@ const Catering = () => {
 
 
 
-                <div className='flex items-start lg:items-center px-[10%] lg:px-[40px] sm:px-[10%px] py-[50px] sm:w-[72%] mx-auto relative z-[500]'>
+                <div className='flex items-center px-[40px] sm:px-[80px] py-[50px] sm:w-[72%] mx-auto relative z-[500]'>
                     <span className='text-center sm:mx-[20px]'>
                         <h2 className='text-center text-accent text-[20px] lg:text-[40px] font-[600] pb-[10px] lg:pb-[20px]'>Full Pan Party</h2>
                         <h3 className='text-center text-[14px] lg:text-[25px] font-[500] lg:leading-[38px] text-white pb-[15px] lg:pb-[30px]'>Mild / Spicy Grilled beef garnished with onion & cucumber.</h3>
