@@ -4,7 +4,10 @@ import vector from '../../assets/Vector.png'
 import ladies from '../../assets/2ladies.png'
 import beefsalad from '../../assets/beefsalad.png'
 import boygirl from '../../assets/boygirl.png'
-import unseen from '../../assets/unseen.png'
+import pic4 from '../../assets/pic4.png'
+import elevateL from '../../assets/elL.png'
+import elevateR from '../../assets/elR.png'
+import elevate from '../../assets/elevate.png'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useInView } from "react-intersection-observer";
 import {
@@ -25,7 +28,15 @@ const Catering = () => {
         triggerOnce: false,
         threshold: 0.5,
     });
+    const { ref: ref5, inView: inView5 } = useInView({
+        triggerOnce: false,
+        threshold: 0.5,
+    });
     const { ref: ref11, inView: inView11 } = useInView({
+        triggerOnce: false,
+        threshold: 0.5,
+    });
+    const { ref: ref17, inView: inView17 } = useInView({
         triggerOnce: false,
         threshold: 0.5,
     });
@@ -109,28 +120,93 @@ const Catering = () => {
                                 <img src={boygirl} alt="Decorative Vector" className="slider-image w-full" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={unseen} alt="Decorative Vector" className="slider-image w-full" />
+                                <img src={pic4} alt="Decorative Vector" className="slider-image w-full" />
                             </SwiperSlide>
                         </Swiper>
                     </motion.div>
+                    <div className='flex items-center flex-col px-[70px] py-[60px]'>
+                        <p className='text-center text-accent text-[15px] lg:text-[25px] font-[600]'>Looking to elevate your next event with an unforgettable culinary experience?</p>
+                        <span className='mt-[10px] lg:mt-[5px] text-center text-[10px] lg:text-[16px] font-[500] lg:leading-[38px] text-white'>Suya Mix Bistro is here to spice things up! Whether it’s a small social gathering, a grand celebration, or a corporate event, we offer catering services tailored to meet your needs.  </span>
+                    </div>
                 </div>
 
 
 
+
+              <div className='py-[50px] px-[50px] lg:px-[150px]'>
+              <motion.div
+                    ref={ref5}
+                    initial={{ opacity: 0, y: -100 }}
+                    animate={{
+                        opacity: inView5 ? 1 : 0,
+                        y: inView4 ? 0 : -100,
+                    }}
+                    transition={{ duration: 0.5 }}
+                    className='flex justify-center items-center px-[74px]'>
+                    <div className='flex flex-col items-center mt-[20px]'>
+                        <p className='text-center text-[25px] lg:text-[70px] font-[600] text-accent lg:leading-[84px] mb-[10px]'>Our Catering Options</p>
+                        <img src={vector} alt="Decorative Vector" className="vector-image w-[200px] lg:w-[350px] mt-2" />
+                    </div>
+                </motion.div>
+                <div className='relative flex justify-center items-center'>
+                    <motion.img ref={ref17}
+                        initial={{ opacity: 0, x: -50 }}
+                        animate={{
+                            opacity: inView17 ? 1 : 0,
+                            x: inView17 ? 0 : -50,
+                        }}
+                        transition={{ duration: 0.5 }} src={elevateL} alt="" className='absolute left-1 lg:-left-[10%] w-[20%] lg:w-[30%]' />
+                    <motion.img ref={ref17}
+                        initial={{ opacity: 0, x: 50 }}
+                        animate={{
+                            opacity: inView17 ? 1 : 0,
+                            x: inView17 ? 0 : 50,
+                        }}
+                        transition={{ duration: 0.5 }} src={elevateR} alt="" className='absolute right-1 lg:-right-[10%] w-[20%] lg:w-[30%]' />
+                    <img src={elevate} alt="" className='w-[70%]' />
+                </div>
 
 
                 <div className='flex items-center px-[40px] sm:px-[80px] py-[50px] sm:w-[72%] mx-auto relative z-[500]'>
                     <span className='text-center sm:mx-[20px]'>
-                        <h2 className='text-center text-accent text-[20px] lg:text-[40px] font-[600] pb-[10px] lg:pb-[20px]'>Full Pan Party</h2>
+                        <h2 className='text-center text-accent text-[20px] lg:text-[35px] font-[600] pb-[10px] lg:pb-[20px]'>Half Pan Party</h2>
                         <h3 className='text-center text-[14px] lg:text-[25px] font-[500] lg:leading-[38px] text-white pb-[15px] lg:pb-[30px]'>Mild / Spicy Grilled beef garnished with onion & cucumber.</h3>
-                        <p className='text-accent font-[600] text-[18px] sm:leading-[27px]'>$170,00</p>
+                        <p className='text-accent font-[600] text-[18px] sm:leading-[27px]'>$150,00</p>
                     </span>
                     <span className='text-center sm:mx-[20px]'>
-                        <h2 className='text-center text-accent text-[20px] lg:text-[40px] font-[600] pb-[10px] lg:pb-[20px]'>Small Pan Snack</h2>
+                        <h2 className='text-center text-accent text-[20px] lg:text-[35px] font-[600] pb-[10px] lg:pb-[20px]'>Full Pan Snack</h2>
                         <h3 className='text-center text-[14px] lg:text-[25px] font-[500] lg:leading-[38px] text-white pb-[15px] lg:pb-[30px]'>Mild / Spicy Grilled chicken garnished with onion & cucumber.</h3>
                         <p className='text-accent font-[600] text-[18px] sm:leading-[27px]'>$300,00</p>
                     </span>
                 </div>
+              </div>  
+
+
+              <div>
+              <motion.div
+                    ref={ref5}
+                    initial={{ opacity: 0, y: -100 }}
+                    animate={{
+                        opacity: inView5 ? 1 : 0,
+                        y: inView4 ? 0 : -100,
+                    }}
+                    transition={{ duration: 0.5 }}
+                    className='flex justify-center items-center px-[74px]'>
+                    <div className='relative z-[200] flex flex-col items-center mt-[40px] sm:mt-[80px]'>
+                        <p className='text-center text-[25px] lg:text-[70px] font-[600] text-accent lg:leading-[84px] mb-[10px]'>Lets Get Started</p>
+                        <img src={vector} alt="Decorative Vector" className="vector-image w-[200px] lg:w-[350px] mt-2" />
+                    </div>
+                </motion.div>
+                <div>
+                    <p></p>
+                </div>
+                <div className='flex items-center justify-center'>
+
+                </div>
+
+
+              </div>
+
             </section>
         </div>
     );

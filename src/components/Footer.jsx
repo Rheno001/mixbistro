@@ -32,14 +32,27 @@ const Footer = () => {
             <p className='text-center text-[14px] lg:text-[15px] text-white lg:text-orange sm:text-[20px] capitalize'>follow us on social media for latest updates</p>
 
             <div className='hidden lg:flex justify-center items-center pt-[5px]'>
-                <img src={insta} alt="" className='mx-[5px] w-[30px] sm:w-full' />
-                <img src={fb} alt="" className='mx-[5px] w-[30px] sm:w-full' />
-                <img src={tik} alt="" className='mx-[5px] w-[30px] sm:w-full' />
+            <Link onClick={handleClick} className='w-[33%] flex justify-center items-center' to={'https://www.tiktok.com/@suyamixbistro?_t=8sK1cCG7xKY&_r=1'}>
+                    <img src={insta} alt="" />
+                </Link>
+                <Link onClick={handleClick} className='w-[33%] flex justify-center items-center mx-[10px]' to={'https://www.tiktok.com/@suyamixbistro?_t=8sK1cCG7xKY&_r=1'}>
+                    <img src={fb} alt="" />
+                </Link>
+                <Link onClick={handleClick} className='w-[33%] flex justify-center items-center' to={'https://www.tiktok.com/@suyamixbistro?_t=8sK1cCG7xKY&_r=1'}>
+                    <img src={tik} alt="" />
+                </Link>
             </div>
             <div className='flex lg:hidden justify-center items-center pt-[5px]'>
-                <img src={instaMob} alt="" className='mx-[5px] w-[30px] sm:w-full' />
-                <img src={fbMob} alt="" className='mx-[5px] w-[30px] sm:w-full' />
-                <img src={tikMob} alt="" className='mx-[5px] w-[30px] sm:w-full' />
+            <Link onClick={handleClick} className='w-[30px] flex justify-center items-center' to={'https://www.tiktok.com/@suyamixbistro?_t=8sK1cCG7xKY&_r=1'}>
+                    <img src={insta} alt="" />
+                </Link>
+                <Link onClick={handleClick} className='w-[30px] flex justify-center items-center mx-[10px]' to={'https://www.tiktok.com/@suyamixbistro?_t=8sK1cCG7xKY&_r=1'}>
+                    <img src={fb} alt="" />
+                </Link>
+                <Link onClick={handleClick} className='w-[30px] flex justify-center items-center' to={'https://www.tiktok.com/@suyamixbistro?_t=8sK1cCG7xKY&_r=1'}>
+                    <img src={tik} alt="" />
+                </Link>
+                
             </div>
         </div>
     </div>);
