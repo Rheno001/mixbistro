@@ -10,12 +10,12 @@ const Nav = () => {
     };
 
     return (
-        <div className={`bg-${isOpen ? 'primary' : 'secondary'} w-full relative z-[10000]`}>
-            <div className="px-4 lg:px-[80px] hero relative py-[10px] lg:py-[30px] text-accent font-[600] text-[25px] flex flex-row-reverse lg:flex-row justify-between items-center z-[100000]">
+        <div className={`bg-${isOpen ? 'primary' : 'secondary'} w-full relative z-[10000000]`}>
+            <div className="px-4 lg:px-[80px] hero relative py-[10px] lg:py-[30px] text-accent font-[600] text-[25px] flex flex-row-reverse lg:flex-row justify-between items-center z-[10000000]">
                 {/* Hamburger Menu Button - Only visible on mobile/tablet */}
                 <button
                     onClick={() => setIsOpen(!isOpen)}
-                    className="lg:hidden flex flex-col gap-[5px]"
+                    className="lg:hidden flex flex-col gap-[5px] relative z-[10000000]"
                 >
                     <span className={`block h-1 rounded-sm w-8 bg-accent transition-transform duration-300 ${isOpen ? 'rotate-45 translate-y-[8.5px]' : ''}`}></span>
                     <span className={`block h-1 rounded-sm w-8 bg-accent transition-opacity duration-300 ${isOpen ? 'opacity-0' : ''}`}></span>
