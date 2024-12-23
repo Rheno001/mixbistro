@@ -45,7 +45,7 @@ const Catering = () => {
             alert('Please fill all information')
             return
         } else {
-            const phoneNumber = '+2349031400901'; // Replace with the recipient's WhatsApp number
+            const phoneNumber = '+1(210)3600221'; // Replace with the recipient's WhatsApp number
             const message = formatWhatsAppMessage();
             const whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
 
