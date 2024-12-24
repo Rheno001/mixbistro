@@ -44,13 +44,13 @@ const Footer = () => {
             </div>
             <div className='flex lg:hidden justify-center items-center pt-[5px]'>
             <Link onClick={handleClick} className='w-[30px] flex justify-center items-center' to={'https://www.tiktok.com/@suyamixbistro?_t=8sK1cCG7xKY&_r=1'}>
-                    <img src={insta} alt="" />
+                    <img src={instaMob} alt="" />
                 </Link>
                 <Link onClick={handleClick} className='w-[30px] flex justify-center items-center mx-[10px]' to={'https://www.tiktok.com/@suyamixbistro?_t=8sK1cCG7xKY&_r=1'}>
-                    <img src={fb} alt="" />
+                    <img src={fbMob} alt="" />
                 </Link>
                 <Link onClick={handleClick} className='w-[30px] flex justify-center items-center' to={'https://www.tiktok.com/@suyamixbistro?_t=8sK1cCG7xKY&_r=1'}>
-                    <img src={tik} alt="" />
+                    <img src={tikMob} alt="" />
                 </Link>
                 
             </div>

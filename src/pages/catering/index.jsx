@@ -117,11 +117,11 @@ const Catering = () => {
                         transition={{ duration: 0.5 }} className='flex justify-center items-center mt-[40px] sm:mt-[80px] flex-col relative'>
                         {/* <img src={ellipse} alt="" className='absolute z-[400] w-[100vw] -top-[15%]' /> */}
                         <div
-                            className="w-[100vw] bg-primary h-[40%] absolute z-[400] -top-[19%] clip-path-ellipse"
+                            className="w-[110vw] bg-primary h-[40%] absolute z-[400] -top-[19%] clip-path-ellipse"
                         >
                         </div>
                         <div
-                            className="w-[100vw] bg-primary h-[40%] absolute z-[400000] -bottom-[19%] clip-path-ellipse"
+                            className="w-[110vw] bg-primary h-[40%] absolute z-[400000] -bottom-[19%] clip-path-ellipse"
                         >
                         </div>
                         <Swiper
