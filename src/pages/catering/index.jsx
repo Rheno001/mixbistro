@@ -23,13 +23,25 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { useLocation } from 'react-router-dom';
 
 const Catering = () => {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [phone, setPhone] = useState('')
     const [message, setMessage] = useState('')
+
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.hash) {
+            const element = document.querySelector(location.hash);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+    }, [location]);
 
     const formatWhatsAppMessage = () => {
         return `Hello,\n\nYou have a new contact inquiry:\n\n` +
@@ -231,7 +243,7 @@ const Catering = () => {
                         <img src={vector} alt="Decorative Vector" className="vector-image w-[200px] lg:w-[350px] mt-2" />
                     </div>
                 </motion.div>
-                <div className=''>
+                <div id='order-form'  className=''>
                     <p className='text-white text-center lg:text-left lg:text-[25px] font-[600] mb-[30px]'>Ready to plan your event? Fill out the form below to share the details, and our team will be in touch to confirm your order: </p>
 
                     <div className='bg-[#943A37] px-[33px] py-[20px] rounded-[20px] mb-[70px] flex flex-col lg:flex-row justify-between items-center gap-[30px]'>
