@@ -494,7 +494,7 @@ const Landing = () => {
             </motion.div>
         </div>
 
-        <div className='px-[5%] py-[20px] lg:py-[70px]'>
+        <div className='px-[5%] py-[20px] lg:py-[70px] noise lg:bg-primary'>
             <motion.div ref={ref20}
                 initial={{ opacity: 0, y: -100 }}
                 animate={{

@@ -29,7 +29,7 @@ const Footer = () => {
                 <img src={line} alt="" />
             </div>
 
-            <p className='text-center text-[14px] lg:text-[15px] text-white lg:text-orange sm:text-[20px] capitalize'>follow us on social media for latest updates</p>
+            <p className='text-center text-[14px] lg:text-[15px] text-white sm:text-[20px] capitalize'>follow us on social media for latest updates</p>
 
             <div className='hidden lg:flex justify-center items-center pt-[5px]'>
             <Link onClick={handleClick} className='w-[33%] flex justify-center items-center' to={'https://www.tiktok.com/@suyamixbistro?_t=8sK1cCG7xKY&_r=1'}>
