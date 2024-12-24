@@ -52,18 +52,21 @@ const Catering = () => {
             `Best regards.`;
     };
 
-    const sendMessageOnWhatsApp = () => {
-        if (name === '' || email === '' || phone === '' || message === '') {
-            alert('Please fill all information')
-            return
-        } else {
-            const phoneNumber = '+1(210)3600221'; // Replace with the recipient's WhatsApp number
-            const message = formatWhatsAppMessage();
-            const whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
-
-            window.open(whatsappURL, '_blank');
+    const sendMessageOnWhatsApp = (e) => {
+        e.preventDefault()
+        if (!name || !email || !phone || !message) {
+            alert('Please fill all information');
+            return;
         }
+
+        const phoneNumber = '+12103600221'; // Replace with the recipient's WhatsApp number
+        const messageContent = formatWhatsAppMessage();
+        const whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(messageContent)}`;
+
+        // Open WhatsApp in a new tab with the message pre-filled
+        window.open(whatsappURL, '_blank');
     };
+
 
     const { ref: ref4, inView: inView4 } = useInView({
         triggerOnce: false,
@@ -255,7 +258,7 @@ const Catering = () => {
                                 <input type="email" placeholder='Email' className='border-[2px] text-white border-[#FFFFFF33] bg-[#FFFFFF0D] w-full px-[20px] h-[42px] rounded-[5px] outline-none' value={email} onChange={(e) => setEmail(e.target.value)} />
                                 <input type="tel" placeholder='Phone Number' className='border-[2px] text-white border-[#FFFFFF33] bg-[#FFFFFF0D] w-full px-[20px] h-[42px] rounded-[5px] outline-none' value={phone} onChange={(e) => setPhone(e.target.value)} />
                                 <textarea placeholder='Message' className='border-[2px] text-white border-[#FFFFFF33] bg-[#FFFFFF0D] w-full px-[20px] h-[102px] rounded-[5px] outline-none' value={message} onChange={(e) => setMessage(e.target.value)} />
-                                <button onClick={sendMessageOnWhatsApp} className='bg-[#F9DF7A] w-full rounded-[5px] h-[42px] text-[15px] text-primary font-[500]'>Send</button>
+                                <button onClick={(e) => sendMessageOnWhatsApp(e)} className='bg-[#F9DF7A] w-full rounded-[5px] h-[42px] text-[15px] text-primary font-[500]'>Send</button>
                             </div>
                         </form>
                         <img className='w-full lg:w-1/2' src={form} alt="" />
