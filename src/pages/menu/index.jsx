@@ -6,6 +6,7 @@ import frame120 from '../../assets/des.png'
 import des1 from '../../assets/des1.png'
 import des2 from '../../assets/des2.png'
 // import noise from '../../assets/noise.svg'
+import { Link } from 'react-router-dom';
 
 const Menu = () => {
   const { ref: ref1, inView: inView1 } = useInView({
@@ -133,7 +134,7 @@ const Menu = () => {
               <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>Mild / Spicy Grilled chicken wings garnished with onion & cucumber.</h3>
               <p className='text-accent font-[600] text-[18px] leading-[27px]'>$17,00</p>
             </span>
-            <div className='flex items-center justify-center lg:justify-start'><button className='bg-accent rounded-sm text-primary text-15px lg:text-[25px] font-semibold w-[120px] lg:w-[240px] h-[50px] lg:h-[65px] p-[10px] gap-[10px] mt-4'>Order Now </button></div>
+            <Link to={'/catering#order-now'} className='flex relative z-[100000000] items-center justify-center lg:justify-start'><button className='bg-accent hero rounded-sm text-primary text-15px lg:text-[25px] font-semibold w-[120px] lg:w-[240px] h-[50px] lg:h-[65px] p-[10px] gap-[10px] mt-4'>Order Now </button></Link>
           </motion.div>
         </div>
       </section>
@@ -199,7 +200,7 @@ const Menu = () => {
               <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>Mild / Spicy Grilled chicken wings garnished with onion & cucumber.</h3>
               <p className='text-accent font-[600] text-[18px] leading-[27px]'>$17,00</p>
             </span>
-            <div className='flex items-center justify-center lg:justify-start'><button className='bg-accent rounded-sm text-primary text-15px lg:text-[25px] font-semibold w-[120px] lg:w-[240px] h-[50px] lg:h-[65px] p-[10px] gap-[10px] mt-4'>Order Now </button></div>
+            <Link to={'/catering#order-now'} className='flex relative z-[100000000] items-center justify-center lg:justify-start'><button className='bg-accent hero rounded-sm text-primary text-15px lg:text-[25px] font-semibold w-[120px] lg:w-[240px] h-[50px] lg:h-[65px] p-[10px] gap-[10px] mt-4'>Order Now </button></Link>
           </motion.div>
         </div>
 
@@ -265,7 +266,7 @@ const Menu = () => {
               <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>Mild / Spicy Grilled chicken wings garnished with onion & cucumber.</h3>
               <p className='text-accent font-[600] text-[18px] leading-[27px]'>$17,00</p>
             </span>
-            <div className='flex items-center justify-center lg:justify-start'><button className='bg-accent rounded-sm text-primary text-15px lg:text-[25px] font-semibold w-[120px] lg:w-[240px] h-[50px] lg:h-[65px] p-[10px] gap-[10px] mt-4'>Order Now </button></div>
+            <Link to={'/catering#order-now'} className='flex relative z-[100000000] items-center justify-center lg:justify-start'><button className='bg-accent hero rounded-sm text-primary text-15px lg:text-[25px] font-semibold w-[120px] lg:w-[240px] h-[50px] lg:h-[65px] p-[10px] gap-[10px] mt-4'>Order Now </button></Link>
           </motion.div>
         </div>
 
@@ -331,7 +332,7 @@ const Menu = () => {
               <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>Mild / Spicy Grilled chicken wings garnished with onion & cucumber.</h3>
               <p className='text-accent font-[600] text-[18px] leading-[27px]'>$17,00</p>
             </span>
-            <div className='flex items-center justify-center lg:justify-start'><button className='bg-accent rounded-sm text-primary text-15px lg:text-[25px] font-semibold w-[120px] lg:w-[240px] h-[50px] lg:h-[65px] p-[10px] gap-[10px] mt-4'>Order Now </button></div>
+            <Link to={'/catering#order-now'} className='flex relative z-[100000000] items-center justify-center lg:justify-start'><button className='bg-accent hero rounded-sm text-primary text-15px lg:text-[25px] font-semibold w-[120px] lg:w-[240px] h-[50px] lg:h-[65px] p-[10px] gap-[10px] mt-4'>Order Now </button></Link>
           </motion.div>
         </div>
       </section>
