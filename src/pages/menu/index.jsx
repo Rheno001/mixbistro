@@ -308,19 +308,19 @@ const Menu = () => {
             }}
           >
             <span className='gap-[11px] text-center lg:text-left pb-4 flex flex-col border-b-2 border-dashed border-orange'>
-              <h2 className='text-accent  text-[30px] lg:text-[40px] leading-[48px] font-[600]'>BOSS! Beef Suya</h2>
-              <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>Mild / Spicy Grilled beef garnished with onion & cucumber.</h3>
-              <p className='text-accent font-[600] text-[18px] leading-[27px]'>$20,00</p>
+              <h2 className='text-accent  text-[30px] lg:text-[40px] leading-[48px] font-[600]'>Zobo smoothie</h2>
+              <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>Blend your day with a burst of health and flavor – the Zobo Smoothie awaits.</h3>
+              <p className='text-accent font-[600] text-[18px] leading-[27px]'>$12,00</p>
             </span>
             <span className='gap-[11px] text-center lg:text-left py-4 flex flex-col border-b-2 border-dashed border-orange'>
-              <h2 className='text-accent  text-[30px] lg:text-[40px] leading-[48px] font-[600]'>Chillin&apos; Chicken Suya</h2>
-              <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>Mild / Spicy Grilled chicken garnished with onion & cucumber.</h3>
-              <p className='text-accent font-[600] text-[18px] leading-[27px]'>$30,00</p>
+              <h2 className='text-accent  text-[30px] lg:text-[40px] leading-[48px] font-[600]'>Zobo Punch</h2>
+              <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>Sip into paradise with Zobo Punch – where every glass is a tropical getaway!</h3>
+              <p className='text-accent font-[600] text-[18px] leading-[27px]'>$12,00</p>
             </span>
             <span className='gap-[11px] text-center lg:text-left py-4 flex flex-col border-b-2 border-dashed border-orange'>
-              <h2 className='text-accent  text-[30px] lg:text-[40px] leading-[48px] font-[600]'>Wingin&apos; it Suya</h2>
-              <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>Mild / Spicy Grilled chicken wings garnished with onion & cucumber.</h3>
-              <p className='text-accent font-[600] text-[18px] leading-[27px]'>$17,00</p>
+              <h2 className='text-accent  text-[30px] lg:text-[40px] leading-[48px] font-[600]'>Zobo Mojito</h2>
+              <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>A zesty, minty refreshment</h3>
+              <p className='text-accent font-[600] text-[18px] leading-[27px]'>$15,00</p>
             </span>
             <Link to={'/catering#order-now'} className='flex relative z-[100000000] items-center justify-center lg:justify-start'><button className='bg-accent hero rounded-sm text-primary text-15px lg:text-[25px] font-semibold w-[120px] lg:w-[240px] h-[50px] lg:h-[65px] p-[10px] gap-[10px] mt-4'>Order Now </button></Link>
           </motion.div>
