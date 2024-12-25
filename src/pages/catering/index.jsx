@@ -251,8 +251,7 @@ const Catering = () => {
 
                     <div className='bg-[#943A37] px-[33px] py-[20px] rounded-[20px] mb-[70px] flex flex-col lg:flex-row justify-between items-center gap-[30px]'>
                         <form action="" className='w-full lg:w-1/2 relative z-[10000000] lg:p-[40px] text-white'>
-                            <h1 className='text-[24px] lg:text-[30px] font-[600] text-white pb-2'>Pls input your details </h1>
-                            <p className='text-[14px] lg:text-[16px] pb-[40px]'>You will be contacted in 10 minutes tops</p>
+                            <h1 className='text-[24px] lg:text-[30px] font-[600] text-white pb-2'>Input your details </h1>
                             <div className='flex flex-col items-start w-full gap-[14px]'>
                                 <input type="text" placeholder='Full Name' className='border-[2px] text-white border-[#FFFFFF33] bg-[#FFFFFF0D] w-full px-[20px] h-[42px] rounded-[5px] outline-none' value={name} onChange={(e) => setName(e.target.value)} />
                                 <input type="email" placeholder='Email' className='border-[2px] text-white border-[#FFFFFF33] bg-[#FFFFFF0D] w-full px-[20px] h-[42px] rounded-[5px] outline-none' value={email} onChange={(e) => setEmail(e.target.value)} />

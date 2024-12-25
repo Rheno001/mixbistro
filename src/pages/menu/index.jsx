@@ -5,6 +5,7 @@ import vector from '../../assets/Vector.png'
 import frame120 from '../../assets/des.png'
 import des1 from '../../assets/des1.png'
 import des2 from '../../assets/des2.png'
+import glass from '../../assets/glass.png'
 // import noise from '../../assets/noise.svg'
 import { Link } from 'react-router-dom';
 
@@ -279,7 +280,7 @@ const Menu = () => {
         <div className='flex flex-col lg:flex-row items-center gap-[35px] pt-[10px] sm:pt-[50px]'>
           <motion.img
             ref={ref7}
-            src={des2}
+            src={glass}
             alt="Frame 120"
             className='w-[100%] sm:w-[60%] h-[100%] sm:h-[60%]'
             initial={{ x: -100, opacity: 0 }}
@@ -308,18 +309,18 @@ const Menu = () => {
             }}
           >
             <span className='gap-[11px] text-center lg:text-left pb-4 flex flex-col border-b-2 border-dashed border-orange'>
-              <h2 className='text-accent  text-[30px] lg:text-[40px] leading-[48px] font-[600]'>Zobo smoothie</h2>
-              <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>Blend your day with a burst of health and flavor – the Zobo Smoothie awaits.</h3>
+              <h2 className='text-accent  text-[30px] lg:text-[40px] leading-[48px] font-[600]'>Zobo</h2>
+              <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>Sip into refreshment with zobo -  a vibrant taste of nature's goodness</h3>
               <p className='text-accent font-[600] text-[18px] leading-[27px]'>$12,00</p>
             </span>
             <span className='gap-[11px] text-center lg:text-left py-4 flex flex-col border-b-2 border-dashed border-orange'>
-              <h2 className='text-accent  text-[30px] lg:text-[40px] leading-[48px] font-[600]'>Zobo Punch</h2>
-              <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>Sip into paradise with Zobo Punch – where every glass is a tropical getaway!</h3>
+              <h2 className='text-accent  text-[30px] lg:text-[40px] leading-[48px] font-[600]'>Cocktail</h2>
+              <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>Elevate your spirits with our signature cocktail.</h3>
               <p className='text-accent font-[600] text-[18px] leading-[27px]'>$12,00</p>
             </span>
             <span className='gap-[11px] text-center lg:text-left py-4 flex flex-col border-b-2 border-dashed border-orange'>
-              <h2 className='text-accent  text-[30px] lg:text-[40px] leading-[48px] font-[600]'>Zobo Mojito</h2>
-              <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>A zesty, minty refreshment</h3>
+              <h2 className='text-accent  text-[30px] lg:text-[40px] leading-[48px] font-[600]'>Water</h2>
+              <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>Stay refreshed and revitalized.</h3>
               <p className='text-accent font-[600] text-[18px] leading-[27px]'>$15,00</p>
             </span>
             <Link to={'/catering#order-now'} className='flex relative z-[100000000] items-center justify-center lg:justify-start'><button className='bg-accent hero rounded-sm text-primary text-15px lg:text-[25px] font-semibold w-[120px] lg:w-[240px] h-[50px] lg:h-[65px] p-[10px] gap-[10px] mt-4'>Order Now </button></Link>
