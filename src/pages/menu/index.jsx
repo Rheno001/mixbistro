@@ -310,7 +310,7 @@ const Menu = () => {
           >
             <span className='gap-[11px] text-center lg:text-left pb-4 flex flex-col border-b-2 border-dashed border-orange'>
               <h2 className='text-accent  text-[30px] lg:text-[40px] leading-[48px] font-[600]'>Zobo</h2>
-              <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>Sip into refreshment with zobo -  a vibrant taste of nature's goodness</h3>
+              <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>Sip into refreshment with zobo -  a vibrant taste of nature&apos;s goodness</h3>
               <p className='text-accent font-[600] text-[18px] leading-[27px]'>$12,00</p>
             </span>
             <span className='gap-[11px] text-center lg:text-left py-4 flex flex-col border-b-2 border-dashed border-orange'>
