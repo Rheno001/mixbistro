@@ -120,19 +120,19 @@ const Menu = () => {
             }}
           >
             <span className='gap-[11px] text-center lg:text-left pb-4 flex flex-col border-b-2 border-dashed border-orange'>
-              <h2 className='text-accent  text-[30px] lg:text-[40px] leading-[48px] font-[600]'>BOSS! Beef Suya</h2>
+              <h2 className='text-accent  text-[30px] lg:text-[40px] leading-[48px] font-[600]'>Large</h2>
               <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>Mild / Spicy Grilled beef garnished with onion & cucumber.</h3>
-              <p className='text-accent font-[600] text-[18px] leading-[27px]'>$20,00</p>
+              <p className='text-accent font-[600] text-[18px] leading-[27px]'>$70,00</p>
             </span>
             <span className='gap-[11px] text-center lg:text-left py-4 flex flex-col border-b-2 border-dashed border-orange'>
-              <h2 className='text-accent  text-[30px] lg:text-[40px] leading-[48px] font-[600]'>Chillin&apos; Chicken Suya</h2>
+              <h2 className='text-accent  text-[30px] lg:text-[40px] leading-[48px] font-[600]'>Medium</h2>
               <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>Mild / Spicy Grilled chicken garnished with onion & cucumber.</h3>
-              <p className='text-accent font-[600] text-[18px] leading-[27px]'>$30,00</p>
+              <p className='text-accent font-[600] text-[18px] leading-[27px]'>$50,00</p>
             </span>
             <span className='gap-[11px] text-center lg:text-left py-4 flex flex-col border-b-2 border-dashed border-orange'>
-              <h2 className='text-accent  text-[30px] lg:text-[40px] leading-[48px] font-[600]'>Wingin&apos; it Suya</h2>
+              <h2 className='text-accent  text-[30px] lg:text-[40px] leading-[48px] font-[600]'>Small</h2>
               <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>Mild / Spicy Grilled chicken wings garnished with onion & cucumber.</h3>
-              <p className='text-accent font-[600] text-[18px] leading-[27px]'>$17,00</p>
+              <p className='text-accent font-[600] text-[18px] leading-[27px]'>$30,00</p>
             </span>
             <Link to={'/catering#order-now'} className='flex relative z-[100000000] items-center justify-center lg:justify-start'><button className='bg-accent hero rounded-sm text-primary text-15px lg:text-[25px] font-semibold w-[120px] lg:w-[240px] h-[50px] lg:h-[65px] p-[10px] gap-[10px] mt-4'>Order Now </button></Link>
           </motion.div>
@@ -150,7 +150,7 @@ const Menu = () => {
           transition={{ duration: 0.5 }}
           className='flex justify-center items-center px-50px sm:px-[74px]'>
           <div className='relative flex flex-col mt-[80px] sm:mt-[5px] items-center'>
-            <p className='text-accent font-[600] text-[30px] sm:text-[70px] leading-[60px] font-mont text-center'>Groovy Green Salad</p>
+            <p className='text-accent font-[600] text-[30px] sm:text-[70px] leading-[60px] font-mont text-center'>Vegetables</p>
             <img src={vector} alt="Decorative Vector" className="vector-image w-[250px] sm:mt-4" />
           </div>
         </motion.div>
@@ -186,19 +186,19 @@ const Menu = () => {
             }}
           >
             <span className='gap-[11px] text-center lg:text-left pb-4 flex flex-col border-b-2 border-dashed border-orange'>
-              <h2 className='text-accent  text-[30px] lg:text-[40px] leading-[48px] font-[600]'>BOSS! Beef Suya</h2>
-              <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>Mild / Spicy Grilled beef garnished with onion & cucumber.</h3>
-              <p className='text-accent font-[600] text-[18px] leading-[27px]'>$20,00</p>
+              <h2 className='text-accent  text-[30px] lg:text-[40px] leading-[48px] font-[600]'>Large</h2>
+              <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>Fresh greens, crisp veggies, creamy avocado, and tangy vinaigrette in every bite.</h3>
+              <p className='text-accent font-[600] text-[18px] leading-[27px]'>$15,00</p>
             </span>
             <span className='gap-[11px] text-center lg:text-left py-4 flex flex-col border-b-2 border-dashed border-orange'>
-              <h2 className='text-accent  text-[30px] lg:text-[40px] leading-[48px] font-[600]'>Chillin&apos; Chicken Suya</h2>
-              <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>Mild / Spicy Grilled chicken garnished with onion & cucumber.</h3>
-              <p className='text-accent font-[600] text-[18px] leading-[27px]'>$30,00</p>
+              <h2 className='text-accent  text-[30px] lg:text-[40px] leading-[48px] font-[600]'>Medium</h2>
+              <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>Fresh greens, crisp veggies, creamy avocado, and tangy vinaigrette in every bite.</h3>
+              <p className='text-accent font-[600] text-[18px] leading-[27px]'>$10,00</p>
             </span>
             <span className='gap-[11px] text-center lg:text-left py-4 flex flex-col border-b-2 border-dashed border-orange'>
-              <h2 className='text-accent  text-[30px] lg:text-[40px] leading-[48px] font-[600]'>Wingin&apos; it Suya</h2>
-              <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>Mild / Spicy Grilled chicken wings garnished with onion & cucumber.</h3>
-              <p className='text-accent font-[600] text-[18px] leading-[27px]'>$17,00</p>
+              <h2 className='text-accent  text-[30px] lg:text-[40px] leading-[48px] font-[600]'>Small</h2>
+              <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>Fresh greens, crisp veggies, creamy avocado, and tangy vinaigrette in every bite.</h3>
+              <p className='text-accent font-[600] text-[18px] leading-[27px]'>$5,00</p>
             </span>
             <Link to={'/catering#order-now'} className='flex relative z-[100000000] items-center justify-center lg:justify-start'><button className='bg-accent hero rounded-sm text-primary text-15px lg:text-[25px] font-semibold w-[120px] lg:w-[240px] h-[50px] lg:h-[65px] p-[10px] gap-[10px] mt-4'>Order Now </button></Link>
           </motion.div>
@@ -251,20 +251,10 @@ const Menu = () => {
               duration: 1
             }}
           >
-            <span className='gap-[11px] text-center lg:text-left pb-4 flex flex-col border-b-2 border-dashed border-orange'>
-              <h2 className='text-accent  text-[30px] lg:text-[40px] leading-[48px] font-[600]'>BOSS! Beef Suya</h2>
-              <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>Mild / Spicy Grilled beef garnished with onion & cucumber.</h3>
-              <p className='text-accent font-[600] text-[18px] leading-[27px]'>$20,00</p>
-            </span>
             <span className='gap-[11px] text-center lg:text-left py-4 flex flex-col border-b-2 border-dashed border-orange'>
-              <h2 className='text-accent  text-[30px] lg:text-[40px] leading-[48px] font-[600]'>Chillin&apos; Chicken Suya</h2>
-              <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>Mild / Spicy Grilled chicken garnished with onion & cucumber.</h3>
-              <p className='text-accent font-[600] text-[18px] leading-[27px]'>$30,00</p>
-            </span>
-            <span className='gap-[11px] text-center lg:text-left py-4 flex flex-col border-b-2 border-dashed border-orange'>
-              <h2 className='text-accent  text-[30px] lg:text-[40px] leading-[48px] font-[600]'>Wingin&apos; it Suya</h2>
-              <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>Mild / Spicy Grilled chicken wings garnished with onion & cucumber.</h3>
-              <p className='text-accent font-[600] text-[18px] leading-[27px]'>$17,00</p>
+              <h2 className='text-accent  text-[30px] lg:text-[40px] leading-[48px] font-[600]'>Burger Suya</h2>
+              <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>A flavorful burger with tender suya-spiced beef, fresh toppings, and a creamy kick, all in a soft bun.</h3>
+              <p className='text-accent font-[600] text-[18px] leading-[27px]'>$15,00</p>
             </span>
             <Link to={'/catering#order-now'} className='flex relative z-[100000000] items-center justify-center lg:justify-start'><button className='bg-accent hero rounded-sm text-primary text-15px lg:text-[25px] font-semibold w-[120px] lg:w-[240px] h-[50px] lg:h-[65px] p-[10px] gap-[10px] mt-4'>Order Now </button></Link>
           </motion.div>

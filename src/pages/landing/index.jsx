@@ -359,16 +359,16 @@ const Landing = () => {
                         }} className='flex justify-center items-center w-[100%] min-[1824px]:w-[80%]'
                     >
                         <SwiperSlide>
-                            <OrderCard img={order1} head={'BOSS! Beef Suya'} desc={'Mild / Spicy Grilled beef garnished with onion & cucumber.'} amt={'$35.00'} />
+                            <OrderCard img={order1} head={'BOSS! Beef Suya'} desc={'Mild / Spicy Grilled beef garnished with onion & cucumber.'} amt={'$70.00'} />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <OrderCard img={slide2} head={'Suya Mix Burger'} desc={'Mild / Spicy Grilled beef garnished with onion & cucumber.'} amt={'$12.99'} />
+                            <OrderCard img={slide2} head={'Suya Mix Burger'} desc={'A flavorful burger with tender suya-spiced beef, fresh toppings, and a creamy kick.'} amt={'$15.00'} />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <OrderCard img={slide3} head={'Groovy Green Salad'} desc={'Mild / Spicy Grilled beef garnished with onion & cucumber.'} amt={'$15.00'} />
+                            <OrderCard img={slide3} head={'Groovy Green Salad'} desc={'Fresh greens, crisp veggies, creamy avocado, and tangy vinaigrette in every bite.'} amt={'$15.00'} />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <OrderCard img={order1} head={'BOSS! Beef Suya'} desc={'Mild / Spicy Grilled beef garnished with onion & cucumber.'} amt={'$35.00'} />
+                            <OrderCard img={order1} head={'BOSS! Beef Suya'} desc={'Mild / Spicy Grilled beef garnished with onion & cucumber.'} amt={'$70.00'} />
                         </SwiperSlide>
                     </Swiper>
                     <div className="custom-pagination relative z-[100000000]"></div>
