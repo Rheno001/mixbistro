@@ -42,6 +42,7 @@ const Footer = () => {
                     <img src={tik} alt="" />
                 </Link>
             </div>
+            <p className='hidden lg:flex text-center text-[14px] lg:text-[15px] text-white sm:text-[20px] capitalize'>©2025 Suyamixbistro. All rights reserved.</p>
             <div className='flex lg:hidden justify-center items-center pt-[5px]'>
                 <Link onClick={handleClick} className='w-[30px] flex justify-center relative z-[10000000] items-center' to={'https://www.instagram.com/suyamixbistro/profilecard/?igsh=MW44Z21obWt0M3M1bw=='}>
                     <img src={instaMob} alt="" />
@@ -54,6 +55,7 @@ const Footer = () => {
                 </Link>
                 
             </div>
+            <p className='lg:hidden text-center text-[14px] lg:text-[15px] text-white sm:text-[20px] capitalize'>©2025 Suyamixbistro. All rights reserved.</p>
         </div>
     </div>);
 }
