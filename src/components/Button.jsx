@@ -1,8 +1,8 @@
 // GloriaFoodButton.js
 import { useEffect } from 'react';
 
-const GloriaFoodButton = () => {
-  useEffect(() => {
+const Button = () => {
+  {/*useEffect(() => {
     const scriptId = 'gloriafood-script';
 
     // Load script if not already loaded
@@ -27,7 +27,34 @@ const GloriaFoodButton = () => {
         window.glfButtonInit();
       }
     }
-  }, []);
+  }, []);*/}
+  useEffect(() => {
+  const scriptId = 'gloriafood-script';
+
+  function initGloriaFood() {
+    if (window.glfButtonInit) {
+      window.glfButtonInit();
+    } else {
+      // Retry in a bit (in case script isn't ready yet)
+      setTimeout(initGloriaFood, 500);
+    }
+  }
+
+  if (!document.getElementById(scriptId)) {
+    const script = document.createElement('script');
+    script.src = 'https://www.fbgcdn.com/embedder/js/ewm2.js';
+    script.async = true;
+    script.defer = true;
+    script.id = scriptId;
+
+    script.onload = initGloriaFood;
+
+    document.body.appendChild(script);
+  } else {
+    initGloriaFood();
+  }
+}, []);
+
 
   return (
     <span
@@ -40,4 +67,4 @@ const GloriaFoodButton = () => {
   );
 };
 
-export default GloriaFoodButton;
+export default Button;

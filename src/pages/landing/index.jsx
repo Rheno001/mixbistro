@@ -18,6 +18,7 @@ import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import Slider from '../../components/Slider'
 import Card from '../../components/Card'
+import GloriaButton from '../../components/Button';
 import shipping from './../../assets/shipping.png'
 import sh0pMob from './../../assets/shopMob.png'
 import firstflat from './../../assets/firstflat.png'
@@ -48,7 +49,7 @@ import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
 // import noise from '../../assets/noise.svg'
 import { Link } from 'react-router-dom'
-import GloriaButton from '../../components/Button';
+
 
 const Landing = () => {
     // const { ref: ref3, inView: inView3 } = useInView({
