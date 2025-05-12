@@ -18,7 +18,7 @@ import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import Slider from '../../components/Slider'
 import Card from '../../components/Card'
-import GloriaButton from '../../components/Button';
+import GloriaButton from '../../components/GloriaFood';
 import shipping from './../../assets/shipping.png'
 import sh0pMob from './../../assets/shopMob.png'
 import firstflat from './../../assets/firstflat.png'
@@ -242,6 +242,7 @@ const Landing = () => {
                 {/*<button className='relative z-[10000000] hero bg-accent rounded-[5px] px-[40px] border-primary border-[2px] lg:px-[62px] py-[10px] lg:py-[22px] text-[16px] lg:text-[25px] font-[600]'>Order Now</button>*/}
             </Link>
             <GloriaButton/>
+
         </div>
         <div className='lg:pt-[70px]'>
             <Slider />
