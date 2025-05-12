@@ -48,13 +48,14 @@ import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
 // import noise from '../../assets/noise.svg'
 import { Link } from 'react-router-dom'
-import GloriaFoodButton from '../../components/Button';
+import GloriaButton from '../../components/Button';
 
 const Landing = () => {
     // const { ref: ref3, inView: inView3 } = useInView({
     //     triggerOnce: false,
     //     threshold: 0.5,
     // });
+    
     const { ref: ref2, inView: inView2 } = useInView({
         triggerOnce: false,
         threshold: 0.5,
@@ -236,9 +237,10 @@ const Landing = () => {
             </motion.div>
 
             <Link to={'/catering#order-form'} className='flex justify-center items-center text-primary mt-[50px] mb-[30px]'>
-                <GloriaFoodButton />
+                
                 {/*<button className='relative z-[10000000] hero bg-accent rounded-[5px] px-[40px] border-primary border-[2px] lg:px-[62px] py-[10px] lg:py-[22px] text-[16px] lg:text-[25px] font-[600]'>Order Now</button>*/}
             </Link>
+            <GloriaButton/>
         </div>
         <div className='lg:pt-[70px]'>
             <Slider />
