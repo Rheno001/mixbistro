@@ -8,6 +8,7 @@ import des2 from '../../assets/des2.png'
 import glass from '../../assets/glass.png'
 // import noise from '../../assets/noise.svg'
 import { Link } from 'react-router-dom';
+import GloriaButton from '../../components/GloriaFood';
 
 const Menu = () => {
   const { ref: ref1, inView: inView1 } = useInView({
@@ -135,7 +136,11 @@ const Menu = () => {
               <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>Mild / Spicy Grilled chicken wings garnished with onion & cucumber.</h3>
               <p className='text-accent font-[600] text-[18px] leading-[27px]'>$30,00</p>
             </span>
-            <Link to={'/catering#order-now'} className='flex relative z-[100000000] items-center justify-center lg:justify-start'><button className='bg-accent hero rounded-sm text-primary text-15px lg:text-[25px] font-semibold w-[120px] lg:w-[240px] h-[50px] lg:h-[65px] p-[10px] gap-[10px] mt-4'>Order Now </button></Link>
+            {/*<Link to={'/catering#order-now'} className='flex relative z-[100000000] items-center justify-center lg:justify-start'><button className='bg-accent hero rounded-sm text-primary text-15px lg:text-[25px] font-semibold w-[120px] lg:w-[240px] h-[50px] lg:h-[65px] p-[10px] gap-[10px] mt-4'>Order Now </button></Link>*/}
+             
+             <div className='flex items-center justify-center lg:justify-start mt-[10px]'>
+              <GloriaButton/>
+             </div>
           </motion.div>
         </div>
       </section>
@@ -201,7 +206,10 @@ const Menu = () => {
               <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>Fresh greens, crisp veggies, creamy avocado, and tangy vinaigrette in every bite.</h3>
               <p className='text-accent font-[600] text-[18px] leading-[27px]'>$5,00</p>
             </span>
-            <Link to={'/catering#order-now'} className='flex relative z-[100000000] items-center justify-center lg:justify-start'><button className='bg-accent hero rounded-sm text-primary text-15px lg:text-[25px] font-semibold w-[120px] lg:w-[240px] h-[50px] lg:h-[65px] p-[10px] gap-[10px] mt-4'>Order Now </button></Link>
+            {/*<Link to={'/catering#order-now'} className='flex relative z-[100000000] items-center justify-center lg:justify-start'><button className='bg-accent hero rounded-sm text-primary text-15px lg:text-[25px] font-semibold w-[120px] lg:w-[240px] h-[50px] lg:h-[65px] p-[10px] gap-[10px] mt-4'>Order Now </button></Link>*/}
+            <div className='flex items-center justify-center lg:justify-start mt-[10px]'>
+              <GloriaButton/>
+             </div>
           </motion.div>
         </div>
 
@@ -257,7 +265,10 @@ const Menu = () => {
               <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>A flavorful burger with tender suya-spiced beef, fresh toppings, and a creamy kick, all in a soft bun.</h3>
               <p className='text-accent font-[600] text-[18px] leading-[27px]'>$15,00</p>
             </span>
-            <Link to={'/catering#order-now'} className='flex relative z-[100000000] items-center justify-center lg:justify-start'><button className='bg-accent hero rounded-sm text-primary text-15px lg:text-[25px] font-semibold w-[120px] lg:w-[240px] h-[50px] lg:h-[65px] p-[10px] gap-[10px] mt-4'>Order Now </button></Link>
+            {/*<Link to={'/catering#order-now'} className='flex relative z-[100000000] items-center justify-center lg:justify-start'><button className='bg-accent hero rounded-sm text-primary text-15px lg:text-[25px] font-semibold w-[120px] lg:w-[240px] h-[50px] lg:h-[65px] p-[10px] gap-[10px] mt-4'>Order Now </button></Link>*/}
+            <div className='flex items-center justify-center lg:justify-start mt-[10px]'>
+              <GloriaButton/>
+             </div>
           </motion.div>
         </div>
 
@@ -323,7 +334,10 @@ const Menu = () => {
               <h3 className='text-white font-[500] text-[20px] leading-[37.5px]'>Stay refreshed and revitalized.</h3>
               <p className='text-accent font-[600] text-[18px] leading-[27px]'>$15,00</p>
             </span>
-            <Link to={'/catering#order-now'} className='flex relative z-[100000000] items-center justify-center lg:justify-start'><button className='bg-accent hero rounded-sm text-primary text-15px lg:text-[25px] font-semibold w-[120px] lg:w-[240px] h-[50px] lg:h-[65px] p-[10px] gap-[10px] mt-4'>Order Now </button></Link>
+            {/*<Link to={'/catering#order-now'} className='flex relative z-[100000000] items-center justify-center lg:justify-start'><button className='bg-accent hero rounded-sm text-primary text-15px lg:text-[25px] font-semibold w-[120px] lg:w-[240px] h-[50px] lg:h-[65px] p-[10px] gap-[10px] mt-4'>Order Now </button></Link>*/}
+            <div className='flex items-center justify-center lg:justify-start mt-[10px]'>
+              <GloriaButton/>
+             </div>
           </motion.div>
         </div>
       </section>

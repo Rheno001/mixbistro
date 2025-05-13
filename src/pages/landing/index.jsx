@@ -19,6 +19,7 @@ import { motion } from "framer-motion";
 import Slider from '../../components/Slider'
 import Card from '../../components/Card'
 import GloriaButton from '../../components/GloriaFood';
+import OrderButton from '../../components/Ordernow';
 import shipping from './../../assets/shipping.png'
 import sh0pMob from './../../assets/shopMob.png'
 import firstflat from './../../assets/firstflat.png'
@@ -448,7 +449,8 @@ const Landing = () => {
                     <img src={baki} alt="" className='w-[70%] lg:w-[60%] mt-[5px] lg:mt-[10px]' />
 
                     <div className='lg:flex mt-[10%] justify-center items-center text-accent hidden my-[10px]'>
-                        <Link to={'/catering#order-form'}><button className='relative z-[10000000] hero bg-primary rounded-[5px] px-[14px] lg:px-[62px] py-[7px] lg:py-[22px] text-[16px] lg:text-[25px] font-[600]'>Order Now</button></Link>
+                        <OrderButton/>
+                        {/*<Link to={'/catering#order-form'}><button className='relative z-[10000000] hero bg-primary rounded-[5px] px-[14px] lg:px-[62px] py-[7px] lg:py-[22px] text-[16px] lg:text-[25px] font-[600]'>Order Now</button></Link>*/}
                     </div>
                 </div>
             </motion.div>

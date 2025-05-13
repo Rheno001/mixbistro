@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import noise from '../assets/noise.png'; // Adjust the path as needed based on your file structure
 
-const GlobalFoodEmbed = () => {
+const Ordernow = () => {
   const [clicked, setClicked] = useState(false);
 
   useEffect(() => {
@@ -33,7 +33,7 @@ const GlobalFoodEmbed = () => {
   return (
     <div className="flex items-center justify-center">
       <span
-        className="relative z-[1000] hover:cursor-pointer bg-accent text-primary rounded-[5px] px-[15px] lg:px-[62px] lg:py-[20px] py-[5px] lg:text-[20px] font-[600] overflow-hidden"
+        className="relative z-[1000] hover:cursor-pointer bg-primary rounded-[5px] px-[14px] lg:px-[62px] py-[7px] lg:py-[22px] text-[16px] lg:text-[25px] font-[600]"
         data-glf-cuid="2d614629-134f-4c15-a616-f50c43491244"
         data-glf-ruid="df2957b5-2ece-4cc5-ba4c-b7421f04893a"
         onClick={() => setClicked(true)}
@@ -53,4 +53,4 @@ const GlobalFoodEmbed = () => {
   );
 };
 
-export default GlobalFoodEmbed;
+export default Ordernow;
