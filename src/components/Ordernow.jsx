@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import noise from '../assets/noise.png'; // Adjust the path as needed based on your file structure
+import { useEffect, useState } from 'react';
+import noise from '../assets/noise.png';
 
 const Ordernow = () => {
   const [clicked, setClicked] = useState(false);

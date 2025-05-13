@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import noise from '../assets/noise.png'; // Adjust the path as needed based on your file structure
+import noise from '../assets/noise.png';
 
 const GlobalFoodEmbed = () => {
   const [clicked, setClicked] = useState(false);

@@ -1,5 +1,3 @@
-/* eslint-disable react/prop-types */
-
 const Card = ({img, heading, para}) => {
     return ( <>
     <div className='flex flex-col justify-center items-center w-[260px] sm:w-[412px]'>

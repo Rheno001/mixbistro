@@ -1,5 +1,3 @@
-/* eslint-disable react/prop-types */
-import { Link } from "react-router-dom";
 import Orderrounded from "./Orderrounded";
 
 const OrderCard = ({img, head, desc, amt}) => {

@@ -6,8 +6,6 @@ import frame120 from '../../assets/des.png'
 import des1 from '../../assets/des1.png'
 import des2 from '../../assets/des2.png'
 import glass from '../../assets/glass.png'
-// import noise from '../../assets/noise.svg'
-import { Link } from 'react-router-dom';
 import GloriaButton from '../../components/GloriaFood';
 
 const Menu = () => {

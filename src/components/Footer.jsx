@@ -6,9 +6,7 @@ import tik from '../assets/tik.svg'
 import instaMob from '../assets/instaMob.svg'
 import fbMob from '../assets/fbMob.svg'
 import tikMob from '../assets/tikMob.svg'
-// import footerBg from '../assets/footerBg.png'
 import { Link } from 'react-router-dom';
-// import noise from '../assets/noise.svg'
 
 const Footer = () => {
     const handleClick = () => {

@@ -1,9 +1,7 @@
 import text from '../../assets/suya.png'
 import text2 from '../../assets/suya-border.png'
 import left from '../../assets/left.png'
-// import leftNav from '../../assets/leftNav.png'
 import right from '../../assets/right.png'
-// import rightNav from '../../assets/rightNav.png'
 import hero from '../../assets/hero.png'
 import string from '../../assets/string.png'
 import art from '../../assets/art.png'
@@ -25,7 +23,6 @@ import sh0pMob from './../../assets/shopMob.png'
 import firstflat from './../../assets/firstflat.png'
 import midflat from './../../assets/midflat.png'
 import food from './../../assets/foodd.png'
-// import foodMob from './../../assets/foodMob.png'
 import baki from './../../assets/blackvector.png'
 import babe from './../../assets/Frame 255.png'
 import babeMob from './../../assets/enjoyMob.png'
@@ -48,7 +45,6 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
-// import noise from '../../assets/noise.svg'
 import { Link } from 'react-router-dom'
 
 
