@@ -328,7 +328,7 @@ const Landing = () => {
                         opacity: inView11 ? 1 : 0,
                         y: inView11 ? 0 : 100,
                     }}
-                    transition={{ duration: 0.5 }} className='flex justify-center items-center gap-[40px] mt-[20px] lg:mt-[80px] flex-col  relative z-[100000000]'>
+                    transition={{ duration: 0.5 }} className='flex justify-center items-center gap-[40px] mt-[20px] lg:mt-[80px] flex-col relative z-[10000]'>
                     <Swiper
                         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                         spaceBetween={40}
@@ -364,7 +364,7 @@ const Landing = () => {
                             <OrderCard img={slide2} head={'Suya Mix Burger'} desc={'A flavorful burger with tender suya-spiced beef, fresh toppings, and a creamy kick.'} amt={'$15.00'} />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <OrderCard img={slide3} head={'Groovy Green Salad'} desc={'Fresh greens, crisp veggies, creamy avocado, and tangy vinaigrette in every bite.'} amt={'$15.00'} />
+                            <OrderCard img={slide3} head={'Groovy Green Salad'} desc={'Fresh greens, crisp veggies, creamy avocado, and tangy dressing in every bite.'} amt={'$15.00'} />
                         </SwiperSlide>
                         <SwiperSlide>
                             <OrderCard img={order1} head={'BOSS! Beef Suya'} desc={'Mild / Spicy Grilled beef garnished with onion & cucumber.'} amt={'$70.00'} />

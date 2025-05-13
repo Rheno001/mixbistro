@@ -4,7 +4,7 @@ import Orderrounded from "./Orderrounded";
 
 const OrderCard = ({img, head, desc, amt}) => {
     return (<>
-        <div className='bg-[#923631] flex flex-col lg:w-[400px] p-3 rounded-[20px] border-[2px] border-accent/30'>
+        <div className='bg-[#923631] flex flex-col lg:w-[390px] p-3 rounded-[20px] border-[2px] border-accent/30'>
             <img src={img} alt="" />
             <div className='pt-[9px] flex flex-col items-start gap-[10px]'>
                 <h1 className='text-[20px] lg:text-[32px] lg:leading-[40px] font-[700] text-accent'>{head}</h1>
