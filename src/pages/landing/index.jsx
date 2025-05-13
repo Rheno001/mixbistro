@@ -52,11 +52,6 @@ import { Link } from 'react-router-dom'
 
 
 const Landing = () => {
-    // const { ref: ref3, inView: inView3 } = useInView({
-    //     triggerOnce: false,
-    //     threshold: 0.5,
-    // });
-    
     const { ref: ref2, inView: inView2 } = useInView({
         triggerOnce: false,
         threshold: 0.5,
@@ -133,10 +128,6 @@ const Landing = () => {
         triggerOnce: false,
         threshold: 0.5,
     });
-    // const { ref: ref21, inView: inView21 } = useInView({
-    //     triggerOnce: false,
-    //     threshold: 0.5,
-    // });
     const { ref: ref22, inView: inView22 } = useInView({
         triggerOnce: false,
         threshold: 0.5,
@@ -237,12 +228,13 @@ const Landing = () => {
                 transition={{ duration: 0.5 }}><img src={text} alt="" className='relative w-full z-10' />
             </motion.div>
 
-            <Link to={'/catering#order-form'} className='flex justify-center items-center text-primary mt-[50px] mb-[30px]'>
+            {/*<Link to={'/catering#order-form'} className='flex justify-center items-center text-primary mt-[50px] mb-[30px]'>
                 
-                {/*<button className='relative z-[10000000] hero bg-accent rounded-[5px] px-[40px] border-primary border-[2px] lg:px-[62px] py-[10px] lg:py-[22px] text-[16px] lg:text-[25px] font-[600]'>Order Now</button>*/}
-            </Link>
-            <GloriaButton/>
-
+                {<button className='relative z-[10000000] hero bg-accent rounded-[5px] px-[40px] border-primary border-[2px] lg:px-[62px] py-[10px] lg:py-[22px] text-[16px] lg:text-[25px] font-[600]'>Order Now</button>*
+            </Link>*/}
+            <div className='flex justify-center items-center mt-[50px] mb-[30px]'>
+                <GloriaButton/>
+            </div>
         </div>
         <div className='lg:pt-[70px]'>
             <Slider />

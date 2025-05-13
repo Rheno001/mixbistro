@@ -12,7 +12,7 @@ function App() {
           <div className="font-mont relative">
           {/* <img src={noise} className='absolute z-[10000] w-screen bg-repeat object-contain h-full' alt="" /> */}
           <div
-            className="absolute opacity-55 inset-0 z-[10000000] hero bg-repeat"
+            className="absolute opacity-55 inset-0 z-[1000] hero bg-repeat"
           ></div>
             <Nav />
             <Routes>
