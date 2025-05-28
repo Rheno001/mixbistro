@@ -10,7 +10,7 @@ const Nav = () => {
     };
 
     return (
-        <div className={`bg-${isOpen ? 'primary' : 'secondary'} w-full relative z-[10000000]`}>
+        <div className={`bg-${isOpen ? 'primary' : 'secondary'} w-full z-[10000000] top-0 sticky`}>
             <div className="px-4 lg:px-[80px] hero relative py-[10px] lg:py-[30px] text-accent font-[600] text-[25px] flex flex-row-reverse lg:flex-row justify-between items-center z-[10000000]">
                 {/* Hamburger Menu Button - Only visible on mobile/tablet */}
                 <button
