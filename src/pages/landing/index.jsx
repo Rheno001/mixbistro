@@ -168,7 +168,7 @@ const Landing = () => {
                         className='absolute w-[38%] lg:w-[50%] right-[6%] top-12 min-[1824px]:top-24 z-[20]'
                     />
                     <img
-                        src={hero}
+                        src={"https://res.cloudinary.com/dpi5jyqbt/image/upload/v1748990902/hero_cwgyy9.png"}
                         alt="Centered Image"
                         className='relative z-[10px]  w-[60vw] lg:w-[47vw] min-[1824px]:w-[48vw]'
                     />
