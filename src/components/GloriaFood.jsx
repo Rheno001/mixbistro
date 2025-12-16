@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import noise from '../assets/noise.png';
+import noise from '../assets/noise.webp';
 
 const GlobalFoodEmbed = () => {
   const [clicked, setClicked] = useState(false);

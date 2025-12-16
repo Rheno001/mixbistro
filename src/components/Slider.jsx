@@ -1,4 +1,4 @@
-import tongue from '../assets/tongue.png'
+import tongue from '../assets/tongue.webp'
 const Slider = () => {
     return (
         <div className="overflow-hidden bg-[#C38455] py-3">

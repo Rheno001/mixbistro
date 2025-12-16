@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion'
 import { useInView } from "react-intersection-observer";
-import logo from '../../assets/logo.png'
-import vector from '../../assets/Vector.png'
-import frame120 from '../../assets/des.png'
-import des1 from '../../assets/des1.png'
-import des2 from '../../assets/des2.png'
-import glass from '../../assets/glass.png'
+import logo from '../../assets/logo.webp'
+import vector from '../../assets/Vector.webp'
+import frame120 from '../../assets/des.webp'
+import des1 from '../../assets/des1.webp'
+import des2 from '../../assets/des2.webp'
+import glass from '../../assets/glass.webp'
 import GloriaButton from '../../components/GloriaFood';
 
 const Menu = () => {

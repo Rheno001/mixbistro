@@ -1,36 +1,36 @@
-import text from '../../assets/suya.png'
-import text2 from '../../assets/suya-border.png'
-import left from '../../assets/left.png'
-import right from '../../assets/right.png'
-import hero from '../../assets/hero.png'
-import string from '../../assets/string.png'
-import art from '../../assets/art.png'
-import elevateL from '../../assets/elL.png'
-import elevateR from '../../assets/elR.png'
-import elevate from '../../assets/elevate.png'
-import line from '../../assets/line.png'
-import gal from '../../assets/gal.png'
-import smallL from '../../assets/small-l.png'
-import smallR from '../../assets/small-r.png'
+import text from '../../assets/suya.webp'
+import text2 from '../../assets/suya-border.webp'
+import left from '../../assets/left.webp'
+import right from '../../assets/right.webp'
+import hero from '../../assets/hero.webp'
+import string from '../../assets/string.webp'
+import art from '../../assets/art.webp'
+import elevateL from '../../assets/elL.webp'
+import elevateR from '../../assets/elR.webp'
+import elevate from '../../assets/elevate.webp'
+import line from '../../assets/line.webp'
+import gal from '../../assets/gal.webp'
+import smallL from '../../assets/small-l.webp'
+import smallR from '../../assets/small-r.webp'
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import Slider from '../../components/Slider'
 import Card from '../../components/Card'
 import GloriaButton from '../../components/GloriaFood';
 import OrderButton from '../../components/Ordernow';
-import shipping from './../../assets/shipping.png'
-import sh0pMob from './../../assets/shopMob.png'
-import firstflat from './../../assets/firstflat.png'
-import midflat from './../../assets/midflat.png'
-import food from './../../assets/foodd.png'
-import baki from './../../assets/blackvector.png'
-import babe from './../../assets/Frame 255.png'
-import babeMob from './../../assets/enjoyMob.png'
-import about from './../../assets/about.png'
-import order1 from './../../assets/order1.png'
-import slide2 from './../../assets/slide2.png'
-import slide3 from './../../assets/slide3.png'
-import aboutMob from './../../assets/aboutMob.png'
+import shipping from './../../assets/shipping.webp'
+import sh0pMob from './../../assets/shopMob.webp'
+import firstflat from './../../assets/firstflat.webp'
+import midflat from './../../assets/midflat.webp'
+import food from './../../assets/foodd.webp'
+import baki from './../../assets/blackvector.webp'
+import babe from './../../assets/Frame 255.webp'
+import babeMob from './../../assets/enjoyMob.webp'
+import about from './../../assets/about.webp'
+import order1 from './../../assets/order1.webp'
+import slide2 from './../../assets/slide2.webp'
+import slide3 from './../../assets/slide3.webp'
+import aboutMob from './../../assets/aboutMob.webp'
 import OrderCard from '../../components/OrderCard'
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
@@ -168,7 +168,7 @@ const Landing = () => {
                         className='absolute w-[38%] lg:w-[50%] right-[6%] top-12 min-[1824px]:top-24 z-[20]'
                     />
                     <img
-                        src={"https://res.cloudinary.com/dpi5jyqbt/image/upload/v1748990902/hero_cwgyy9.png"}
+                        src={"https://res.cloudinary.com/dpi5jyqbt/image/upload/v1748990902/hero_cwgyy9.webp"}
                         alt="Centered Image"
                         className='relative z-[10px]  w-[60vw] lg:w-[47vw] min-[1824px]:w-[48vw]'
                     />
